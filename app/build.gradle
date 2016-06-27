@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+Properties props = new Properties()
+props.load(new FileInputStream(file("../config/key.properties")))
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "net.anumbrella.lkshop"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        manifestPlaceholders = [
+                UMENG_APPKEY:props['UMENG_APPKEY'],
+                UMENG_MESSAGE_SECRET:props['UMENG_MESSAGE_SECRET'],
+        ]
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    productFlavors {
+        xiaomi{}
+        baidu{}
+        wandoujia{}
+        qihu360{}
+        share{}
+        origin{}
+        qq{}
+    }
+    //应用到每一个flavor
+    productFlavors.all { flavor ->
+        manifestPlaceholders.put("UMENG_CHANNEL",name)
+    }
+
+}
+
+
+
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile "com.android.support:support-v4:23.3.0"
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
+    compile 'com.jude:utils:1.1.3'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.facebook.fresco:fresco:0.10.0'
+    compile 'com.jude:fitsystemwindowlayout:2.1.4'
+    compile 'com.jude:easyrecyclerview:3.5.7'
+    compile 'com.pnikosis:materialish-progress:1.7'
+    compile 'com.jude:rollviewpager:1.3.1'
+    compile 'net.anumbrella:customedittext:1.0.0'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta3'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta3'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta3'
+    compile 'com.squareup.okhttp3:okhttp:3.0.0-RC1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.0.0-RC1'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.orhanobut:dialogplus:1.11@aar'
+    compile 'com.vanniktech:emoji:0.3.0'
+    compile project(':library')
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile name:'SMSSDK-2.0.2',ext:'aar'
+    compile name:'SMSSDKGUI-2.0.2',ext:'aar'
+    compile project(':PushSDK')
+    compile project(':umeng_sharelibrary')
+
+}

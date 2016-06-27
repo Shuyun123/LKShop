@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_header_height"
+    android:background="@color/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/user_img"
+            android:layout_width="@dimen/image_icon_size"
+            android:layout_height="@dimen/image_icon_size"
+            android:layout_gravity="left"
+            fresco:failureImage="@mipmap/default_user_icon"
+            fresco:placeholderImage="@mipmap/default_user_icon"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/login_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dip"
+            android:gravity="center"
+            android:text="点击登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10sp" />
+
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dip"
+        android:text="昵称"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16sp" />
+
+
+    <TextView
+        android:id="@+id/tv_signName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip"
+        android:text="@string/user_desc"
+        android:textColor="@color/textColor_gray"
+        android:textSize="@dimen/text_size_16sp" />
+
+
+</LinearLayout>

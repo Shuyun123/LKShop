@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dip"
+    android:layout_marginTop="5dip"
+    android:background="@drawable/comment_product_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="0.5dip"
+        android:layout_marginRight="0.5dip"
+        android:layout_marginTop="0.5dip"
+        android:background="#EEEEE0"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/comment_user_icon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dip"
+            app:failureImage="@mipmap/default_user_icon"
+            app:placeholderImage="@mipmap/default_user_icon"
+            app:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/comment_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:gravity="center_vertical"
+            android:text="打伞的她"
+            android:textColor="@color/textColor_black"
+            android:textSize="@dimen/text_size_13sp" />
+
+    </LinearLayout>
+
+    <com.vanniktech.emoji.EmojiTextView
+        android:id="@+id/comment_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        app:emojiSize="@dimen/text_size_23sp"
+        android:text="这个是我的评价啊啊啊啊。。。。好评好评好评好评"
+        android:textColor="@color/textColor_black"
+        android:textSize="@dimen/text_size_17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dip"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_product_detail_describe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="网络类型:电信4G 机身颜色:白色 机身内存:16GB"
+                android:textColor="@color/foot_txt_gray"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="商品描述："
+                android:textColor="@color/textColor_black"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <TextView
+                android:id="@+id/describe_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="分" />
+
+            <LinearLayout
+                android:id="@+id/detail_product_describe_comment_layout"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="1" />
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="2" />
+
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="3" />
+
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="4" />
+
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="5" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="发货速度："
+                android:textColor="@color/textColor_black"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <TextView
+                android:id="@+id/deliver_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="分" />
+
+            <LinearLayout
+                android:id="@+id/detail_product_deliver_speed_comment_layout"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="1" />
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="2" />
+
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="3" />
+
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="4" />
+
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="5" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="服务态度："
+                android:textColor="@color/textColor_black"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <TextView
+                android:id="@+id/service_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="分" />
+
+            <LinearLayout
+                android:id="@+id/detail_product_service_comment_layout"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="1" />
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="2" />
+
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="3" />
+
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="4" />
+
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@mipmap/comment_no_like"
+                    android:onClick="click"
+                    android:tag="5" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="2016.05.17"
+                android:textColor="@color/textColor_gray"
+                android:textSize="@dimen/text_size_13sp" />
+
+
+            <LinearLayout
+                android:layout_width="100dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/commentFollow_icon"
+                        android:layout_width="23dip"
+                        android:layout_height="25dip"
+                        android:background="@mipmap/comment_follow_click" />
+
+                    <TextView
+                        android:id="@+id/commentFollow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginLeft="5dip"
+                        android:text="0"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/like_icon"
+                        android:layout_width="30dip"
+                        android:layout_height="25dip"
+                        android:layout_marginBottom="3dip"
+                        android:background="@mipmap/like" />
+
+                    <TextView
+                        android:id="@+id/likeNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginLeft="5dip"
+                        android:text="0"
+                        android:textSize="@dimen/text_size_13sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/milk_white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/user_setting_appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/user_setting_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@color/milk_white"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/shadow_top" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="用户头像"
+                    android:textColor="@color/textColor_black"
+                    android:textSize="@dimen/text_size_16sp" />
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/user_setting_icon"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginRight="40dip"
+                    android:layout_marginTop="5dip"
+                    app:failureImage="@mipmap/default_user_icon"
+                    app:placeholderImage="@mipmap/default_user_icon"
+                    app:roundAsCircle="true" />
+
+                <ImageView
+                    android:id="@+id/user_setting_icon_right"
+                    android:layout_width="30dip"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dip"
+                    android:gravity="center"
+                    android:padding="8dip"
+                    android:src="@mipmap/ic_arrow_right" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="用户昵称"
+                    android:textColor="@color/textColor_black"
+                    android:textSize="@dimen/text_size_16sp" />
+
+
+                <TextView
+                    android:id="@+id/user_setting_userName"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_toLeftOf="@+id/user_setting_name_right"
+                    android:gravity="center"
+                    android:maxWidth="100dip"
+                    android:singleLine="true"
+                    android:text="昵称"
+                    android:textColor="@color/textColor_gray"
+                    android:textSize="@dimen/text_size_16sp" />
+
+
+                <ImageView
+                    android:id="@+id/user_setting_name_right"
+                    android:layout_width="30dip"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dip"
+                    android:gravity="center"
+                    android:padding="8dip"
+                    android:src="@mipmap/ic_arrow_right" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="用户签名"
+                    android:textColor="@color/textColor_black"
+                    android:textSize="@dimen/text_size_16sp" />
+
+
+                <TextView
+                    android:id="@+id/user_setting_signName"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toLeftOf="@+id/user_setting_signName_right"
+                    android:gravity="center"
+                    android:maxWidth="150dip"
+                    android:singleLine="true"
+                    android:text="签名~"
+                    android:textColor="@color/textColor_gray"
+                    android:textSize="@dimen/text_size_16sp" />
+
+
+                <ImageView
+                    android:id="@+id/user_setting_signName_right"
+                    android:layout_width="30dip"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dip"
+                    android:gravity="center"
+                    android:padding="8dip"
+                    android:src="@mipmap/ic_arrow_right" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/shadow_bottom" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

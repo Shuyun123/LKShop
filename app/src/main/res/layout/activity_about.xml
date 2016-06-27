@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/milk_white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/about_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@color/milk_white"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/shadow_top" />
+
+        <LinearLayout
+            android:id="@+id/about_app"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/select_action_menu"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:gravity="center"
+                android:text="关于应用"
+                android:textColor="@color/textColor_black"
+                android:textSize="@dimen/text_size_16sp" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dip"
+            android:background="@drawable/select_action_menu"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center"
+                android:text="当前版本"
+                android:textColor="@color/textColor_black"
+                android:textSize="@dimen/text_size_16sp" />
+
+
+            <TextView
+                android:id="@+id/about_app_version"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:text="version: 1.0"
+                android:textColor="@color/textColor_gray"
+                android:textSize="@dimen/text_size_14sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/about_me"
+            android:layout_width="match_parent"
+            android:layout_height="65dip"
+            android:background="@drawable/select_action_menu"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center"
+                android:text="关于我"
+                android:textColor="@color/textColor_black"
+                android:textSize="@dimen/text_size_16sp" />
+
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:text="http://www.anumbrella.net"
+                android:textColor="@color/textColor_gray"
+                android:textSize="@dimen/text_size_14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/about_github"
+            android:layout_width="match_parent"
+            android:layout_height="65dip"
+            android:background="@drawable/select_action_menu"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center"
+                android:text="GitHub"
+                android:textColor="@color/textColor_black"
+                android:textSize="@dimen/text_size_16sp" />
+
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:text="https://github.com/shuyun123"
+                android:textColor="@color/textColor_gray"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/shadow_bottom" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

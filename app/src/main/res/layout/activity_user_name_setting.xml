@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/milk_white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/user_name_setting_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:orientation="vertical"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip">
+
+        <net.anumbrella.customedittext.MyEditText
+            android:id="@+id/edit_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:drawableRight="@mipmap/close"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_18sp"
+            app:displayDelete="true"
+            app:selectUnderlineHeight="1dip"
+            app:unSelectUnderlineHeight="1dip"
+            app:unselectedColor="@color/textColor_gray" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:orientation="vertical"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/save_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/save_setting_btn"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

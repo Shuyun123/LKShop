@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.anumbrella.lkshop"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ui.activity.WelcomeActivity" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:theme="@style/AppTheme.Notitle" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:theme="@style/AppTheme.Notitle" />
+
+        <activity
+            android:name=".ui.activity.FindPasswordActivity"
+            android:theme="@style/AppTheme.Notitle" />
+        <activity android:name=".ui.activity.DetailContentActivity" />
+        <activity android:name=".ui.activity.ServiceTextActivity" />
+        <activity android:name=".ui.activity.ApplicationActiivty">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.RepairContentActivity"
+            android:theme="@style/AppTheme.Notitle" />
+
+        <activity
+            android:name=".ui.activity.CategorizeDetailProductActivity"
+            android:theme="@style/AppTheme.Notitle" />
+        <activity
+            android:name=".ui.activity.ProductPayDetailActivity"
+            android:theme="@style/AppTheme.Notitle" />
+        <activity
+            android:name=".ui.activity.UserSettingActivity"
+            android:theme="@style/AppTheme.Notitle" />
+
+        <activity
+            android:name=".ui.activity.AllOrderActivity"
+            android:theme="@style/AppTheme.Notitle" />
+        <activity
+            android:name=".ui.activity.CollectActivity"
+            android:theme="@style/AppTheme.Notitle" />
+
+        <activity
+            android:name=".ui.activity.CommentActivity"
+            android:theme="@style/AppTheme.Notitle" />
+        <activity
+            android:name=".ui.activity.SubCommentActivity"
+            android:theme="@style/AppTheme.Notitle" />
+        <activity
+            android:name=".ui.activity.SearchActivity"
+            android:theme="@style/AppTheme.Notitle" />
+
+        <activity
+            android:name=".ui.activity.UserNameSettingActivity"
+            android:theme="@style/AppTheme.Notitle" />
+
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:theme="@style/AppTheme.Notitle" />
+
+        <activity
+            android:name=".ui.activity.AboutActivity"
+            android:theme="@style/AppTheme.Notitle" />
+
+        <activity
+            android:name=".ui.activity.BaseWebActivity"
+            android:theme="@style/AppTheme.Notitle" />
+        <!--MOB短信验证activity-->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!--友盟-->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${UMENG_APPKEY}" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="${UMENG_MESSAGE_SECRET}" />
+
+        <!--友盟分享-->
+
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!--分享编辑页-->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID-->
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity
+            android:name=".share.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+    </application>
+
+</manifest>

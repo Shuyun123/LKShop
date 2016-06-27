@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:anumbrella="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/float_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_15sp"
+        android:textStyle="normal"
+        android:typeface="monospace" />
+
+    <net.anumbrella.customedittext.MyEditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:drawableRight="@mipmap/close"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_18sp"
+        anumbrella:displayDelete="true"
+        anumbrella:selectUnderlineHeight="2dip"
+        anumbrella:unSelectUnderlineHeight="1dip"
+        anumbrella:unselectedColor="@color/textColor_gray" />
+
+</merge>

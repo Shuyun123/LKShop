@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 必须要的shap的类型 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/colorAccent" />
+    <corners
+        android:bottomLeftRadius="@dimen/shape"
+        android:bottomRightRadius="@dimen/shape"
+        android:topLeftRadius="@dimen/shape"
+        android:topRightRadius="@dimen/shape" />
+</shape>

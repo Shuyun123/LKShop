@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab">
+        <item>最近热销</item>
+        <item>全新手机</item>
+        <item>二手良品</item>
+        <item>手机配件</item>
+        <item>保护壳/膜</item>
+        <item>手机维修</item>
+    </string-array>
+
+
+    <!-- 抽屉栏导航listView菜单项 -->
+    <string-array name="nav_drawer_items">
+        <item>@string/drawer_home</item>
+        <item>@string/drawer_setting</item>
+        <item>@string/drawer_advice</item>
+        <item>@string/drawer_share</item>
+        <item>@string/drawer_about</item>
+        <item>@string/drawer_exit</item>
+    </string-array>
+
+    <!-- 抽屉栏导航listView菜单项的图标 -->
+    <array name="nav_drawer_icons">
+        <item>@mipmap/ic_drawer_home</item>
+        <item>@mipmap/ic_drawer_setting</item>
+        <item>@mipmap/ic_drawer_advice</item>
+        <item>@mipmap/ic_drawer_share</item>
+        <item>@mipmap/ic_drawer_about</item>
+        <item>@mipmap/ic_drawer_exit</item>
+    </array>
+
+    <!--菜单图标的背景颜色-->
+    <array name="nav_drawer_tint">
+        <item>@color/drawer_home_coclor</item>
+        <item>@color/drawer_search_coclor</item>
+        <item>@color/drawer_setting_coclor</item>
+        <item>@color/drawer_advice_coclor</item>
+        <item>@color/drawer_share_coclor</item>
+        <item>@color/drawer_about_coclor</item>
+        <item>@color/drawer_exit_coclor</item>
+    </array>
+
+
+</resources>

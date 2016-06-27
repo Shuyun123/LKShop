@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/user_setting_photo"
+        android:layout_width="match_parent"
+        android:layout_height="65dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dip"
+            android:layout_height="25dip"
+            android:background="@mipmap/take_a_picture"
+            android:backgroundTint="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="照相"
+            android:textSize="@dimen/text_size_18sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/tabTextColor" />
+
+    <LinearLayout
+        android:id="@+id/user_setting_album"
+        android:layout_width="match_parent"
+        android:layout_height="65dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dip"
+            android:layout_height="25dip"
+            android:background="@mipmap/album"
+            android:backgroundTint="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="相册"
+            android:textSize="@dimen/text_size_18sp" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/tabTextColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/user_setting_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/textColor_black"
+            android:textSize="@dimen/text_size_25sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

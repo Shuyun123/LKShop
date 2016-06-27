@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00A8F1</color>
+    <color name="colorPrimaryDark">#00A8F1</color>
+    <color name="colorAccent">#038ECE</color>
+
+
+    <color name="welcomeText">#4682B4</color>
+    <color name="tabHostBg">#F6F6F6</color>
+    <color name="tabTextColor">#AEAEAE</color>
+    <color name="tabBg">#F6F6F6</color>
+    <color name="foot_txt_gray">#AEAEAE</color>
+    <color name="white">#ffffff</color>
+    <color name="textColor_gray">#cccccc</color>
+    <color name="textColor_black">#333</color>
+    <color name="textColor_red">#CD0000</color>
+    <color name="textColor_item_list_menus">#000</color>
+    <color name="addShopping_bg">#5E5E5E</color>
+    <color name="gray">#dedede</color>
+
+
+    <!--抽屉菜单图标的背景颜色-->
+    <color name="drawer_home_coclor">#00A8F1</color>
+    <color name="drawer_search_coclor">#ff2ec5f5</color>
+    <color name="drawer_setting_coclor">#ffec7530</color>
+    <color name="drawer_advice_coclor">#ff6fc624</color>
+    <color name="drawer_share_coclor">#fffecb2f</color>
+    <color name="drawer_about_coclor">#038ECE</color>
+    <color name="drawer_exit_coclor">#ff3bbfba</color>
+
+
+    <color name="progressColor">#5588FF</color>
+    <color name="font_light">#464e76</color>
+    <color name="milk_white">#F5F5F5</color>
+    <color name="shopping_list_bg">#D8D0CF</color>
+    <color name="shop_bg">#FF0714</color>
+    <color name="transparent">#00000000</color>
+    <color name="table_boder_color">#848484</color>
+    <color name="register_bg_color">#F7F7F7</color>
+    <color name="register_hint_text_color">#AEAEAE</color>
+    <color name="login_btn_text_color">#0fc4d9</color>
+    <color name="detail_buy_color">#FF9631</color>
+
+
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dip"
+    android:background="@drawable/sub_comment_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:paddingBottom="10dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="0.5dip"
+        android:layout_marginRight="0.5dip"
+        android:layout_marginTop="0.5dip"
+        android:background="#EEEEE0"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sub_comment_user_icon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dip"
+            app:failureImage="@mipmap/default_user_icon"
+            app:placeholderImage="@mipmap/default_user_icon"
+            app:roundAsCircle="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sub_comment_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="打伞的她"
+                android:textColor="@color/textColor_black"
+                android:textSize="@dimen/text_size_13sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="5dip">
+
+                <TextView
+                    android:id="@+id/sub_comment_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text="6月5日 17:20"
+                    android:textColor="@color/foot_txt_gray"
+                    android:textSize="@dimen/text_size_10sp" />
+
+                <TextView
+                    android:id="@+id/sub_comment_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:text="19楼"
+                    android:textColor="@color/foot_txt_gray"
+                    android:textSize="@dimen/text_size_10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dip"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/like_icon"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginBottom="3dip"
+                    android:background="@mipmap/like" />
+
+                <TextView
+                    android:id="@+id/likeNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="1"
+                    android:textSize="@dimen/text_size_13sp" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.vanniktech.emoji.EmojiTextView
+        android:id="@+id/sub_comment_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:textColor="@color/textColor_black"
+        android:textSize="@dimen/text_size_17sp"
+        app:emojiSize="@dimen/text_size_23sp"
+        tools:text="text" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/viewPager_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/large_page"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        app:progressBarImage="@mipmap/ic_loading"
+        app:progressBarImageScaleType="centerInside"
+        fresco:failureImage="@drawable/icn_close"
+        fresco:failureImageScaleType="centerInside"
+
+        />
+</LinearLayout>

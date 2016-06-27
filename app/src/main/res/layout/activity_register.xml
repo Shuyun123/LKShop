@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/milk_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/btn_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@+id/btn_back"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20sp" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@mipmap/ok" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/register_bg_color"
+        android:orientation="vertical"
+        android:paddingBottom="50dip">
+
+        <net.anumbrella.customedittext.FloatLabelView
+            android:id="@+id/register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:hint="手机号"
+            android:layout="@layout/custom_edittext"
+            android:textColorHint="@color/register_hint_text_color"
+            app:bottomDistance="2dip"
+            app:leftDistance="1dip" />
+
+
+        <net.anumbrella.customedittext.FloatLabelView
+            android:id="@+id/register_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:hint="昵称"
+            android:layout="@layout/custom_edittext"
+            android:textColorHint="@color/register_hint_text_color"
+            app:bottomDistance="2dip"
+            app:leftDistance="1dip" />
+
+
+        <net.anumbrella.customedittext.FloatLabelView
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:hint="密码"
+            android:layout="@layout/custom_edittext"
+            android:textColorHint="@color/register_hint_text_color"
+            app:bottomDistance="2dip"
+            app:leftDistance="1dip" />
+
+
+        <net.anumbrella.customedittext.FloatLabelView
+            android:id="@+id/register_password_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:hint="密码确认"
+            android:layout="@layout/custom_edittext"
+            android:textColorHint="@color/register_hint_text_color"
+            app:bottomDistance="2dip"
+            app:leftDistance="1dip" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dip"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/register_info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/register_info" />
+
+            <TextView
+                android:id="@+id/service_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/register_info1"
+                android:text="服务条款"
+                android:textColor="#6495ED" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

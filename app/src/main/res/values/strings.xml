@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">洛克商城</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="immediatelyEnter">立即进入</string>
+    <string name="login">登录</string>
+    <string name="strPoint">指示器</string>
+    <string name="user_desc">签名~</string>
+    <string name="view_net_error">世界上最遥远的距离就是没有网</string>
+    <string name="describe_app">"应用主要集中了常用的用户登录、注册、分享、短信验证，云端的数据同步和用户数据上传，以及商城的基本逻辑功能，如购物车的添加删除、商品的收藏、订单的增删查改等。遗憾的是没有接入支付宝，因为这个要企业认证。今后自己也会不断地完善。"</string>
+
+    <!--list菜单项-->
+    <string name="drawer_home">首页</string>
+    <string name="drawer_setting">设置</string>
+    <string name="drawer_advice">意见反馈</string>
+    <string name="drawer_share">分享</string>
+    <string name="drawer_about">关于</string>
+    <string name="drawer_exit">退出</string>
+
+    <string name="categorize">商品分类</string>
+    <string name="register_info">点击"注册"即意味着您已经阅读并同意</string>
+    <string name="author_info">打伞的她 © anumbrella</string>
+
+    <string name="app_introduce">商城开源版</string>
+</resources>
