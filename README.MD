@@ -10,9 +10,9 @@
  <ul>
    <li style="list-style-type:none;margin-top:20px;">
       <image style="margin-left:10px" src = "./introduce/introduce1.png">
-      &nbsp;&nbsp;
+      &nbsp;
       <image style="margin-left:10px" src = "./introduce/introduce2.png">
-      &nbsp;&nbsp;
+      &nbsp;
       <image style="margin-left:10px" src = "./introduce/introduce3.png">
    </li>
    <br/>
@@ -20,9 +20,9 @@
    <br/>
    <li style="list-style-type:none;margin-top:35px;">
       <image style="margin-left:10px" src = "./introduce/introduce4.png">
-      &nbsp;&nbsp;
+      &nbsp;
       <image style="margin-left:10px" src = "./introduce/introduce5.png">
-      &nbsp;&nbsp;
+      &nbsp;
       <image style="margin-left:10px" src = "./introduce/introduce6.png">
    </li>
     <br/>
@@ -30,9 +30,9 @@
    <br/>
    <li style="list-style-type:none;margin-top:35px;">
       <image style="margin-left:10px" src = "./introduce/introduce7.png">
-      &nbsp;&nbsp;
+      &nbsp;
       <image style="margin-left:10px" src = "./introduce/introduce8.png">
-      &nbsp;&nbsp;
+      &nbsp;
       <image style="margin-left:10px" src = "./introduce/introduce9.png">
    </li>
  </ul>
