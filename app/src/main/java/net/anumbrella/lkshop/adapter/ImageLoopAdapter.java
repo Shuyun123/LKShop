@@ -14,7 +14,6 @@ import net.anumbrella.lkshop.R;
 import net.anumbrella.lkshop.model.bean.BannerDataModel;
 import net.anumbrella.lkshop.ui.activity.SearchActivity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

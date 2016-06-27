@@ -4,7 +4,6 @@ import android.annotation.TargetApi;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
-import android.util.Log;
 import android.util.Xml;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,14 +20,12 @@ import com.vanniktech.emoji.EmojiTextView;
 import net.anumbrella.lkshop.R;
 import net.anumbrella.lkshop.model.CommentDataModel;
 import net.anumbrella.lkshop.model.bean.CommentProductDataModel;
-import net.anumbrella.lkshop.ui.activity.AllOrderActivity;
 import net.anumbrella.lkshop.ui.activity.SubCommentActivity;
 import net.anumbrella.lkshop.utils.BaseUtils;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
-import java.net.URLEncoder;
 
 import okhttp3.ResponseBody;
 import retrofit2.Callback;
@@ -164,7 +161,7 @@ public class CommentProductViewHolder extends BaseViewHolder<CommentProductDataM
                         likeNumber.setVisibility(View.VISIBLE);
                         likeNumber.setText(String.valueOf(Integer.parseInt(likeNumber.getText().toString()) - 1));
                         like_icon.setBackground(getContext().getResources().getDrawable(R.mipmap.like));
-                        if(Integer.parseInt(likeNumber.getText().toString()) == 0){
+                        if (Integer.parseInt(likeNumber.getText().toString()) == 0) {
                             likeNumber.setVisibility(View.GONE);
                         }
                     }
@@ -172,12 +169,12 @@ public class CommentProductViewHolder extends BaseViewHolder<CommentProductDataM
                 } else {
                     likeNumber.setText(String.valueOf(Integer.parseInt(likeNumber.getText().toString()) + 1));
                     like_icon.setBackground(getContext().getResources().getDrawable(R.mipmap.like_click));
-                    if(Integer.parseInt(likeNumber.getText().toString()) > 0){
+                    if (Integer.parseInt(likeNumber.getText().toString()) > 0) {
                         likeNumber.setVisibility(View.VISIBLE);
                     }
                     isNotLike = true;
                 }
-                updateLikes(Integer.parseInt(likeNumber.getText().toString()),isNotLike);
+                updateLikes(Integer.parseInt(likeNumber.getText().toString()), isNotLike);
                 break;
 
         }
@@ -190,11 +187,11 @@ public class CommentProductViewHolder extends BaseViewHolder<CommentProductDataM
                 public void onResponse(Response<ResponseBody> response) {
                     try {
                         String result = response.body().string().toString();
-                        if (result.equals("0200")){
-                            if(isNotLike){
-                                Toast.makeText(getContext(),"点赞成功",Toast.LENGTH_SHORT).show();
-                            }else{
-                                Toast.makeText(getContext(),"已取消点赞",Toast.LENGTH_SHORT).show();
+                        if (result.equals("0200")) {
+                            if (isNotLike) {
+                                Toast.makeText(getContext(), "点赞成功", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(getContext(), "已取消点赞", Toast.LENGTH_SHORT).show();
                             }
                         }
 
@@ -205,7 +202,7 @@ public class CommentProductViewHolder extends BaseViewHolder<CommentProductDataM
 
                 @Override
                 public void onFailure(Throwable t) {
-                    Toast.makeText(getContext(),"网络不给力",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "网络不给力", Toast.LENGTH_SHORT).show();
                 }
             }, String.valueOf(data.getCid()), String.valueOf(likes));
         }

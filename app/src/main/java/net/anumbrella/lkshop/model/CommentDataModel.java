@@ -1,9 +1,7 @@
 package net.anumbrella.lkshop.model;
 
 import net.anumbrella.lkshop.http.RetrofitHttp;
-import net.anumbrella.lkshop.model.bean.CommentOrderDataModel;
 import net.anumbrella.lkshop.model.bean.CommentProductDataModel;
-import net.anumbrella.lkshop.model.bean.OrderDataModel;
 import net.anumbrella.lkshop.model.bean.SubCommentDataModel;
 
 import java.util.List;

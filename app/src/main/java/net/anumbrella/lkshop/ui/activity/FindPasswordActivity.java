@@ -2,7 +2,6 @@ package net.anumbrella.lkshop.ui.activity;
 
 import android.annotation.TargetApi;
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,7 +12,6 @@ import android.text.InputType;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.umeng.message.PushAgent;
@@ -21,8 +19,6 @@ import com.umeng.message.PushAgent;
 import net.anumbrella.customedittext.FloatLabelView;
 import net.anumbrella.lkshop.R;
 import net.anumbrella.lkshop.model.FindPassDataModel;
-import net.anumbrella.lkshop.model.bean.LocalUserDataModel;
-import net.anumbrella.lkshop.utils.BaseUtils;
 
 import java.io.IOException;
 import java.util.regex.Matcher;

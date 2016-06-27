@@ -29,7 +29,6 @@ import butterknife.ButterKnife;
  */
 public class CategorizeDetailProductActivity extends AppCompatActivity {
 
-
     public static final String INTENT_PRODUCT_ITEM_INFO = "item_product_info";
 
     private ProductTypeModel productTypeModel;

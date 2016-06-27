@@ -25,7 +25,6 @@ public class RecommendTipVewHolder extends BaseViewHolder<RecommendContentModel>
     private RecommendContentModel data;
 
 
-
     public RecommendTipVewHolder(ViewGroup parent) {
         super(parent, R.layout.itemview_recommend_tip);
         tip = $(R.id.recommend_tip);
@@ -44,11 +43,11 @@ public class RecommendTipVewHolder extends BaseViewHolder<RecommendContentModel>
 
     @Override
     public void onClick(View v) {
-        for(int i=0;i< Config.recommdendTips.length;i++){
-          if(data.getTip().equals(Config.recommdendTips[i])){
-              MainActivity.staticViewPager.setCurrentItem(i+1);
-              break;
-          }
+        for (int i = 0; i < Config.recommdendTips.length; i++) {
+            if (data.getTip().equals(Config.recommdendTips[i])) {
+                MainActivity.staticViewPager.setCurrentItem(i + 1);
+                break;
+            }
         }
     }
 }

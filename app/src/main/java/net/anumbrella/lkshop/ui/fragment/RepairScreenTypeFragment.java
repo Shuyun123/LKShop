@@ -15,7 +15,6 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import net.anumbrella.lkshop.R;
 import net.anumbrella.lkshop.config.Config;
 import net.anumbrella.lkshop.ui.activity.RepairContentActivity;
-import net.anumbrella.lkshop.utils.PreferenceUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

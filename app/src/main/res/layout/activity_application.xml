@@ -11,27 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@mipmap/entrance2" />
-
-    <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/ic_launcher"
-        android:layout_width="70dip"
-        android:layout_height="70dip"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dip"
-        app:failureImage="@mipmap/ic_launcher"
-        app:placeholderImage="@mipmap/ic_launcher"
-        app:roundedCornerRadius="20dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ic_launcher"
-        android:layout_marginTop="10dip"
-        android:gravity="center"
-        android:text="洛克商城   良心品质"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_size_18sp" />
+        android:src="@mipmap/entrance1" />
 
     <View
         android:layout_width="match_parent"

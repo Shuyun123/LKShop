@@ -14,6 +14,7 @@ import net.anumbrella.lkshop.ui.viewholder.CategorizeDetailProductViewHolder;
  * Date：16/6/4 下午7:14
  */
 public class CategorizeDetailProductAdapter extends RecyclerArrayAdapter<ListProductContentModel> {
+
     public CategorizeDetailProductAdapter(Context context) {
         super(context);
     }

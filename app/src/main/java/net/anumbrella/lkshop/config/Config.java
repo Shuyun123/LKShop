@@ -1,7 +1,6 @@
 package net.anumbrella.lkshop.config;
 
 import net.anumbrella.lkshop.R;
-import net.anumbrella.lkshop.model.bean.BannerDataModel;
 import net.anumbrella.lkshop.ui.fragment.CategorizeFragment;
 import net.anumbrella.lkshop.ui.fragment.IndexFragment;
 import net.anumbrella.lkshop.ui.fragment.ShoppingFragment;
@@ -12,7 +11,6 @@ import net.anumbrella.lkshop.ui.fragment.UserFragment;
  * Date：16/5/23 下午11:45
  */
 public final class Config {
-
 
     /**
      * 引导界面本地图片

@@ -132,7 +132,7 @@ public class OrderAllDataViewHolder extends BaseViewHolder<OrderDataModel> imple
                 break;
             case R.id.order_delete:
                 String result = BaseUtils.transformState(data.getIsPay(), data.getIsDeliver(), data.getIsComment());
-                if(result.equals("待付款") || result.equals("订单交易成功")){
+                if (result.equals("待付款") || result.equals("订单交易成功")) {
                     new PromptDialog.Builder(getContext())
                             .setTitle("提示")
                             .setTitleColor(R.color.white)
@@ -155,8 +155,8 @@ public class OrderAllDataViewHolder extends BaseViewHolder<OrderDataModel> imple
                             })
                             .show();
 
-                }else{
-                    Toast.makeText(getContext(),"交易还没完成,不能删除",Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getContext(), "交易还没完成,不能删除", Toast.LENGTH_SHORT).show();
                 }
 
                 break;

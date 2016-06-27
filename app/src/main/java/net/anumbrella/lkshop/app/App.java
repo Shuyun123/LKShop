@@ -1,20 +1,12 @@
 package net.anumbrella.lkshop.app;
 
-import android.Manifest;
 import android.app.Application;
-import android.content.Context;
-import android.support.v4.app.ActivityCompat;
-import android.util.Log;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.jude.utils.JFileManager;
 import com.jude.utils.JUtils;
-import com.umeng.message.PushAgent;
-import com.umeng.message.UmengRegistrar;
 
-import net.anumbrella.lkshop.R;
 import net.anumbrella.lkshop.model.bean.LocalUserDataModel;
-import net.anumbrella.lkshop.ui.activity.MainActivity;
 import net.anumbrella.lkshop.utils.BaseUtils;
 
 import cn.smssdk.SMSSDK;

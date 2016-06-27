@@ -1,6 +1,5 @@
 package net.anumbrella.lkshop.ui.activity;
 
-import android.Manifest;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.net.Uri;
@@ -9,7 +8,6 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTabHost;
 import android.support.v4.app.FragmentTransaction;
@@ -37,7 +35,6 @@ import android.widget.Toast;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.jude.utils.JUtils;
 import com.search.material.library.MaterialSearchView;
-import com.umeng.common.message.Log;
 import com.umeng.message.PushAgent;
 
 import net.anumbrella.lkshop.R;
@@ -54,8 +51,6 @@ import net.anumbrella.lkshop.ui.fragment.RepairFragment;
 import net.anumbrella.lkshop.utils.BaseUtils;
 import net.anumbrella.lkshop.utils.ExitUtils;
 import net.anumbrella.lkshop.widget.MyViewPager;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -208,14 +203,14 @@ public class MainActivity extends AppCompatActivity {
         } else {
             user_img.setImageURI(null);
         }
-        if(!checkLogin()){
+        if (!checkLogin()) {
             loginTip.setVisibility(View.VISIBLE);
-        }else{
+        } else {
             loginTip.setVisibility(View.GONE);
         }
     }
 
-    @OnClick({R.id.fab, R.id.user_img, R.id.tv_signName, R.id.tv_name,R.id.login_tip})
+    @OnClick({R.id.fab, R.id.user_img, R.id.tv_signName, R.id.tv_name, R.id.login_tip})
     public void clickFab(View view) {
         switch (view.getId()) {
             case R.id.fab:
@@ -470,13 +465,16 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 5:
                 //退出
-                LocalUserDataModel data = new LocalUserDataModel();
-                data.setSignName("null");
-                data.setUserImg("null");
-                data.setUserName("null");
-                data.setUid(0);
-                data.setLogin(false);
-                BaseUtils.saveLocalUser(MainActivity.this, data);
+                if(checkLogin()){
+                    LocalUserDataModel data = new LocalUserDataModel();
+                    data.setSignName("null");
+                    data.setUserImg("null");
+                    data.setUserName("null");
+                    data.setUid(0);
+                    data.setLogin(false);
+                    BaseUtils.saveLocalUser(MainActivity.this, data);
+                    JUtils.Toast("已经退出");
+                }
                 onResume();
                 break;
         }

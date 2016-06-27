@@ -21,11 +21,9 @@ import net.anumbrella.lkshop.R;
 import net.anumbrella.lkshop.model.OrderAllDataModel;
 import net.anumbrella.lkshop.model.bean.CommentOrderDataModel;
 import net.anumbrella.lkshop.model.bean.OrderDataModel;
-import net.anumbrella.lkshop.utils.BaseUtils;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.util.HashMap;
 
@@ -35,7 +33,6 @@ import butterknife.OnClick;
 import okhttp3.ResponseBody;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.http.HTTP;
 
 /**
  * author：Anumbrella

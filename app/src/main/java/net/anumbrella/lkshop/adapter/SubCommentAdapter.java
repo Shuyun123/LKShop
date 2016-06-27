@@ -19,7 +19,6 @@ import java.util.HashMap;
  */
 public class SubCommentAdapter extends RecyclerArrayAdapter<SubCommentDataModel> {
 
-
     private int subCommentDetail = 0;
     private int noCommentData = 1;
 

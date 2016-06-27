@@ -3,10 +3,8 @@ package net.anumbrella.lkshop.adapter;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import net.anumbrella.lkshop.ui.activity.MainActivity;
 import net.anumbrella.lkshop.ui.fragment.CategorizeListContentFragment;
 
 /**

@@ -101,7 +101,7 @@ public class ApplicationActiivty extends AppCompatActivity {
      */
     private void initAnim() {
         mFadeIn = AnimationUtils.loadAnimation(this, R.anim.application_fade_in);
-        mFadeIn.setDuration(1000);
+        mFadeIn.setDuration(500);
         mFadeInScale = AnimationUtils.loadAnimation(this,
                 R.anim.application_fade_in_scale);
         mFadeInScale.setDuration(2000);

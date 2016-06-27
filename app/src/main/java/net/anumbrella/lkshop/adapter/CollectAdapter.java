@@ -14,6 +14,7 @@ import net.anumbrella.lkshop.ui.viewholder.CollectDataViewHolder;
  * Date：16/6/10 下午11:18
  */
 public class CollectAdapter extends RecyclerArrayAdapter<ListProductContentModel> {
+
     public CollectAdapter(Context context) {
         super(context);
     }

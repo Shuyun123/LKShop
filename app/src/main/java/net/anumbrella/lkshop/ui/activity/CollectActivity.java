@@ -17,7 +17,6 @@ import net.anumbrella.lkshop.adapter.CollectAdapter;
 import net.anumbrella.lkshop.db.DBManager;
 import net.anumbrella.lkshop.model.bean.ListProductContentModel;
 import net.anumbrella.lkshop.utils.BaseUtils;
-import net.anumbrella.lkshop.utils.PreferenceUtils;
 
 import java.util.ArrayList;
 
@@ -29,7 +28,6 @@ import butterknife.ButterKnife;
  * Date：16/6/10 下午11:09
  */
 public class CollectActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
-
 
     private static CollectAdapter adapter;
 

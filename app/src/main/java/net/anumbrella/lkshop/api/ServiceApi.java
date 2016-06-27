@@ -6,7 +6,6 @@ package net.anumbrella.lkshop.api;
  */
 public class ServiceApi {
 
-
     /**
      * 注册接口:
      * <p>

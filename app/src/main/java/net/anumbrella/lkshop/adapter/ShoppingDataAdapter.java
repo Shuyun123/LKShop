@@ -17,7 +17,6 @@ import java.util.HashMap;
  */
 public class ShoppingDataAdapter extends RecyclerArrayAdapter<ListProductContentModel> {
 
-
     private static HashMap<Integer, Boolean> isCheckList = new HashMap<>();
 
     public ShoppingDataAdapter(Context context) {

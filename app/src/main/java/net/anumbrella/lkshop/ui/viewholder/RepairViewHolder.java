@@ -3,7 +3,6 @@ package net.anumbrella.lkshop.ui.viewholder;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
-import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,7 +52,7 @@ public class RepairViewHolder extends BaseViewHolder<RepairDataModel> implements
         switch (v.getId()) {
             case R.id.repair_cardview:
                 Intent intent = new Intent();
-                intent.putExtra("repairType",data.getTitle());
+                intent.putExtra("repairType", data.getTitle());
                 intent.setClass(getContext(), RepairContentActivity.class);
                 getContext().startActivity(intent);
                 break;

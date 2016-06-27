@@ -14,7 +14,6 @@ import java.util.ArrayList;
  */
 public class ViewPagerAdapter extends PagerAdapter {
 
-
     private ArrayList<SimpleDraweeView> list;
 
 

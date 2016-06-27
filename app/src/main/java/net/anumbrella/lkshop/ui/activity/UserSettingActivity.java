@@ -19,10 +19,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.drawee.view.SimpleDraweeView;
+import com.jude.utils.JUtils;
 import com.orhanobut.dialogplus.DialogPlus;
 import com.orhanobut.dialogplus.Holder;
 import com.orhanobut.dialogplus.OnClickListener;
 import com.orhanobut.dialogplus.ViewHolder;
+import com.umeng.common.message.Log;
 import com.umeng.message.PushAgent;
 
 import net.anumbrella.lkshop.R;
@@ -32,7 +34,6 @@ import net.anumbrella.lkshop.utils.BaseUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -93,9 +94,6 @@ public class UserSettingActivity extends AppCompatActivity {
     TextView signName;
 
 
-
-
-
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -116,14 +114,14 @@ public class UserSettingActivity extends AppCompatActivity {
         }
     }
 
-    private void updateUserName(){
+    private void updateUserName() {
         String name = BaseUtils.readLocalUser(UserSettingActivity.this).getUserName();
         if (!name.equals("null")) {
             userName.setText(name);
         }
     }
 
-    private void updateSignName(){
+    private void updateSignName() {
         String sign = BaseUtils.readLocalUser(UserSettingActivity.this).getSignName();
         if (!sign.equals("null")) {
             signName.setText(sign);
@@ -169,16 +167,16 @@ public class UserSettingActivity extends AppCompatActivity {
                 break;
             case R.id.user_setting_name_right:
                 Intent userNameIntent = new Intent();
-                userNameIntent.putExtra("setting",userName.getText().toString());
-                userNameIntent.putExtra("type",1);
-                userNameIntent.setClass(this,UserNameSettingActivity.class);
+                userNameIntent.putExtra("setting", userName.getText().toString());
+                userNameIntent.putExtra("type", 1);
+                userNameIntent.setClass(this, UserNameSettingActivity.class);
                 startActivity(userNameIntent);
                 break;
             case R.id.user_setting_signName_right:
                 Intent singleNameIntent = new Intent();
-                singleNameIntent.putExtra("setting",signName.getText().toString());
-                singleNameIntent.putExtra("type",2);
-                singleNameIntent.setClass(this,UserNameSettingActivity.class);
+                singleNameIntent.putExtra("setting", signName.getText().toString());
+                singleNameIntent.putExtra("type", 2);
+                singleNameIntent.setClass(this, UserNameSettingActivity.class);
                 startActivity(singleNameIntent);
                 break;
         }
@@ -258,21 +256,29 @@ public class UserSettingActivity extends AppCompatActivity {
 
         } else if (requestCode == PHOTO_REQUEST_CAMERA) {
             if (BaseUtils.hasSdcard()) {
-                tempFile = new File(Environment.getExternalStorageDirectory(),
-                        PHOTO_FILE_NAME);
-                crop(Uri.fromFile(tempFile));
+                tempFile = new File(Environment.getExternalStorageDirectory(), PHOTO_FILE_NAME);
+                if (tempFile.exists()) {
+                    crop(Uri.fromFile(tempFile));
+                } else {
+                    JUtils.Toast("取消拍照");
+                }
             } else {
                 Toast.makeText(UserSettingActivity.this, "未找到存储卡，无法存储照片！", Toast.LENGTH_SHORT).show();
             }
 
         } else if (requestCode == PHOTO_REQUEST_CUT) {
             try {
-                bitmap = data.getParcelableExtra("data");
-                if (tempFile != null) {
-                    tempFile.delete();
+                if (data != null) {
+                    if (data.getParcelableExtra("data") != null) {
+                        bitmap = data.getParcelableExtra("data");
+                    }
+                    if (tempFile != null) {
+                        tempFile.delete();
+                    }
                 }
 
             } catch (Exception e) {
+                Log.d("anumbrella", e.toString());
                 e.printStackTrace();
             }
             uploadPricture();

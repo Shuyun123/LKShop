@@ -61,6 +61,7 @@
             android:background="@color/gray" />
 
         <LinearLayout
+            android:id="@+id/setting_app_version"
             android:layout_width="match_parent"
             android:layout_height="65dip"
             android:background="@drawable/select_action_menu"
@@ -145,15 +146,31 @@
             android:orientation="vertical">
 
 
-            <TextView
-                style="@style/Base.TextAppearance.AppCompat.Body1"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dip"
-                android:gravity="center"
-                android:text="GitHub"
-                android:textColor="@color/textColor_black"
-                android:textSize="@dimen/text_size_16sp" />
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="源码"
+                    android:textColor="@color/textColor_black"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:gravity="center"
+                    android:text="(喜欢就Star一下吧)"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_size_10sp" />
+            </LinearLayout>
 
 
             <TextView
@@ -163,7 +180,7 @@
                 android:layout_marginLeft="10dip"
                 android:layout_marginTop="5dip"
                 android:gravity="center"
-                android:text="https://github.com/shuyun123"
+                android:text="https://github.com/Shuyun123/LKShop"
                 android:textColor="@color/textColor_gray"
                 android:textSize="@dimen/text_size_14sp" />
 

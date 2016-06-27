@@ -2,12 +2,10 @@ package net.anumbrella.lkshop.ui.viewholder;
 
 import android.content.Context;
 import android.os.Handler;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
 import com.jude.easyrecyclerview.swipe.SwipeRefreshLayout;
@@ -21,7 +19,6 @@ import net.anumbrella.lkshop.model.RecommendModel;
 import net.anumbrella.lkshop.model.bean.BannerDataModel;
 import net.anumbrella.lkshop.widget.BannerTextHintView;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import rx.Subscriber;

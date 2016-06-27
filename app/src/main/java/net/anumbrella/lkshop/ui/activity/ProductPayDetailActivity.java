@@ -8,7 +8,6 @@ import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +16,6 @@ import android.widget.Toast;
 import com.umeng.message.PushAgent;
 
 import net.anumbrella.lkshop.R;
-import net.anumbrella.lkshop.api.ServiceApi;
 import net.anumbrella.lkshop.http.RetrofitHttp;
 import net.anumbrella.lkshop.model.bean.ListProductContentModel;
 import net.anumbrella.lkshop.ui.fragment.ShoppingFragment;
@@ -39,7 +37,6 @@ import retrofit2.Response;
  * Date：16/6/9 上午10:59
  */
 public class ProductPayDetailActivity extends AppCompatActivity {
-
 
     private ArrayList<ListProductContentModel> data;
 

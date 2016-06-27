@@ -43,6 +43,9 @@ public class AboutActivity extends AppCompatActivity {
     @BindView(R.id.about_me)
     LinearLayout aboutMe;
 
+    @BindView(R.id.setting_app_version)
+    LinearLayout appVersion;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -78,16 +81,22 @@ public class AboutActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.about_app, R.id.about_github, R.id.about_me})
+    @OnClick({R.id.about_app, R.id.about_github, R.id.about_me, R.id.setting_app_version})
     public void click(View view) {
 
         Bundle extras = new Bundle();
+        android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(AboutActivity.this);
         switch (view.getId()) {
             case R.id.about_app:
-                android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(AboutActivity.this);
                 builder.setTitle("洛克商城");
                 String describeApp = getResources().getString(R.string.describe_app);
                 builder.setMessage(describeApp);
+                builder.show();
+                break;
+            case R.id.setting_app_version:
+                builder.setTitle("洛克商城");
+                String appVersion = "当前版本: " + JUtils.getAppVersionName();
+                builder.setMessage(appVersion);
                 builder.show();
                 break;
             case R.id.about_me:
@@ -98,7 +107,7 @@ public class AboutActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.about_github:
-                extras.putString(BaseWebActivity.BUNDLE_KEY_URL, "https://github.com/shuyun123");
+                extras.putString(BaseWebActivity.BUNDLE_KEY_URL, "https://github.com/Shuyun123/LKShop");
                 extras.putString(BaseWebActivity.BUNDLE_KEY_TITLE, "Github");
                 Intent intentGithub = new Intent(this, BaseWebActivity.class);
                 intentGithub.putExtras(extras);
@@ -106,9 +115,7 @@ public class AboutActivity extends AppCompatActivity {
                 break;
         }
 
-
     }
-
 
     @Override
     public void onBackPressed() {

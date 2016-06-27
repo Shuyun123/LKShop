@@ -6,7 +6,6 @@
     android:gravity="center"
     android:orientation="vertical">
 
-
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/show_dialog_user_icon"
         android:layout_width="325dip"

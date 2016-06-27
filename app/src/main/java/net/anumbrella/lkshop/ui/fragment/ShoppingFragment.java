@@ -25,7 +25,6 @@ import net.anumbrella.lkshop.model.bean.ListProductContentModel;
 import net.anumbrella.lkshop.ui.activity.ProductPayDetailActivity;
 import net.anumbrella.lkshop.ui.viewholder.ShoppingDataViewHolder;
 import net.anumbrella.lkshop.utils.BaseUtils;
-import net.anumbrella.lkshop.utils.PreferenceUtils;
 import net.anumbrella.lkshop.widget.PromptDialog;
 
 import java.util.ArrayList;

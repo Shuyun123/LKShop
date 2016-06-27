@@ -2,7 +2,6 @@ package net.anumbrella.lkshop.ui.viewholder;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.annotation.LayoutRes;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.view.ViewGroup;

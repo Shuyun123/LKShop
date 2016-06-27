@@ -1,7 +1,7 @@
 package net.anumbrella.lkshop.ui.viewholder;
 
 import android.annotation.TargetApi;
-import android.net.Uri;
+import android.content.Intent;
 import android.os.Build;
 import android.view.Gravity;
 import android.view.View;
@@ -19,6 +19,7 @@ import com.jude.easyrecyclerview.adapter.BaseViewHolder;
 import net.anumbrella.lkshop.R;
 import net.anumbrella.lkshop.config.Config;
 import net.anumbrella.lkshop.model.bean.RecommendContentModel;
+import net.anumbrella.lkshop.ui.activity.ContactUsActivity;
 import net.anumbrella.lkshop.ui.activity.MainActivity;
 
 /**
@@ -107,10 +108,12 @@ public class RecommendListViewHolder extends BaseViewHolder<RecommendContentMode
                 MainActivity.staticViewPager.setCurrentItem(5);
                 break;
             case 4:
-                Toast.makeText(getContext(),"下一版本推出",Toast.LENGTH_SHORT).show();
+                Intent contactIntent = new Intent();
+                contactIntent.setClass(getContext(), ContactUsActivity.class);
+                getContext().startActivity(contactIntent);
                 break;
             case 5:
-                Toast.makeText(getContext(),"下一版本推出",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "下一版本推出", Toast.LENGTH_SHORT).show();
                 break;
 
         }

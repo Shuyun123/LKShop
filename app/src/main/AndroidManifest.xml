@@ -43,7 +43,9 @@
             android:theme="@style/AppTheme.Notitle" />
         <activity android:name=".ui.activity.DetailContentActivity" />
         <activity android:name=".ui.activity.ServiceTextActivity" />
-        <activity android:name=".ui.activity.ApplicationActiivty">
+        <activity
+            android:name=".ui.activity.ApplicationActiivty"
+            android:theme="@style/LaunchTheme">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -96,6 +98,10 @@
         <activity
             android:name=".ui.activity.BaseWebActivity"
             android:theme="@style/AppTheme.Notitle" />
+        <activity
+            android:name=".ui.activity.ContactUsActivity"
+            android:theme="@style/AppTheme.Notitle" />
+
         <!--MOB短信验证activity-->
         <activity
             android:name="com.mob.tools.MobUIShell"

@@ -15,7 +15,6 @@ import net.anumbrella.lkshop.R;
 import net.anumbrella.lkshop.adapter.RepairAdapter;
 import net.anumbrella.lkshop.config.Config;
 import net.anumbrella.lkshop.model.bean.RepairDataModel;
-import net.anumbrella.lkshop.ui.activity.MainActivity;
 
 import java.util.ArrayList;
 import java.util.List;

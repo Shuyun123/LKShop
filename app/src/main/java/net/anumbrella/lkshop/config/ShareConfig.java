@@ -25,8 +25,8 @@ import net.anumbrella.lkshop.R;
 public class ShareConfig {
     private Context context;
     private UMSocialService mController;
-    private String appID = "576beb9467e58e2df20013c1";
-    private String appSecret = "d4624c36b6795d1d99dcf0547af5443d";
+    private String appID = "wx7f1384031fed9710";
+    private String appSecret = "29c5d2ffcfb7bd39c29d329ebefbf965";
 
     public UMSocialService init(Context context, Activity activity) {
         this.context = context;
@@ -84,7 +84,7 @@ public class ShareConfig {
     public void initWeixin() {
         WeiXinShareContent weiXinShareContent = new WeiXinShareContent();
         weiXinShareContent.setShareContent("洛克商城app,为你提供良心品质的iphone");
-        weiXinShareContent.setTargetUrl("http://a.app.qq.com/o/simple.jsp?pkgname=com.example.administrator.searchpicturetool");
+        weiXinShareContent.setTargetUrl("http://www.anumbrella.net/App/AppShopService/index.php");
         weiXinShareContent.setTitle("洛克良品");
         weiXinShareContent.setShareImage(new UMImage(context, R.mipmap.ic_launcher));
         mController.setShareMedia(weiXinShareContent);
@@ -93,7 +93,7 @@ public class ShareConfig {
     public void initWXCircle() {
         CircleShareContent circleShareContent = new CircleShareContent();
         circleShareContent.setShareContent("洛克商城app,为你提供良心品质的iphone");
-        circleShareContent.setTargetUrl("http://a.app.qq.com/o/simple.jsp?pkgname=com.example.administrator.searchpicturetool");
+        circleShareContent.setTargetUrl("http://www.anumbrella.net/App/AppShopService/index.php");
         circleShareContent.setTitle("洛克良品");
         circleShareContent.setShareImage(new UMImage(context, R.mipmap.ic_launcher));
         mController.setShareMedia(circleShareContent);

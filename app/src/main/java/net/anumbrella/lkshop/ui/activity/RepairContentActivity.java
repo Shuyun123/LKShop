@@ -20,9 +20,7 @@ import net.anumbrella.lkshop.ui.fragment.RepairScreenTypeFragment;
  */
 public class RepairContentActivity extends AppCompatActivity {
 
-
     private String type = null;
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -1,29 +1,22 @@
 package net.anumbrella.lkshop.ui.activity;
 
 import android.annotation.TargetApi;
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.os.Looper;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.RemoteViews;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,7 +29,6 @@ import com.umeng.message.PushAgent;
 
 import net.anumbrella.lkshop.R;
 import net.anumbrella.lkshop.model.UpdateAppModel;
-import net.anumbrella.lkshop.model.bean.LocalUserDataModel;
 import net.anumbrella.lkshop.utils.BaseUtils;
 import net.anumbrella.lkshop.widget.DownloadProgressHandler;
 import net.anumbrella.lkshop.widget.ProgressHelper;
@@ -49,7 +41,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Date;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -67,7 +58,6 @@ public class SettingActivity extends AppCompatActivity {
     private String fileName;
 
     private String path;
-
 
     @BindView(R.id.setting_toolbar)
     Toolbar toolbar;

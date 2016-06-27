@@ -5,14 +5,12 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import net.anumbrella.lkshop.adapter.ShoppingDataAdapter;
-import net.anumbrella.lkshop.app.App;
 import net.anumbrella.lkshop.config.Config;
 import net.anumbrella.lkshop.config.MySql;
 import net.anumbrella.lkshop.model.bean.ListProductContentModel;
 import net.anumbrella.lkshop.model.bean.ProductDataModel;
 import net.anumbrella.lkshop.model.bean.RecommendContentModel;
 import net.anumbrella.lkshop.utils.BaseUtils;
-import net.anumbrella.lkshop.utils.PreferenceUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -394,40 +392,6 @@ public class DBManager {
     }
 
 
-    /**
-     * 添加商品到购买清单中
-     *
-     * @param pid
-     * @param uid
-     * @param num
-     */
-    public void addBuy(int pid, int uid, int num) {
-        db.beginTransaction();
-        if (!checkBuy(pid, uid)) {
-            db.execSQL("insert into " + MySql.BuyTable + " values(null,?,?,?)",
-                    new Object[]{pid, uid, num});
-        }
-        db.setTransactionSuccessful();
-        db.endTransaction();
-
-    }
-
-    /**
-     * 检查购买清单中是否有该商品
-     *
-     * @param pid
-     * @param uid
-     * @return
-     */
-    public boolean checkBuy(int pid, int uid) {
-        Cursor cursor = db.rawQuery("select * from " + MySql.BuyTable + " where pid = ? and uid = ?",
-                new String[]{String.valueOf(pid), String.valueOf(uid)});
-        if (cursor != null && cursor.moveToFirst()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 
 
     /**

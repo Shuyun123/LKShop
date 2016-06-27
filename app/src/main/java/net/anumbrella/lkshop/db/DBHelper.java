@@ -22,7 +22,6 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL(MySql.createUserTable);
         db.execSQL(MySql.createCollectTable);
         db.execSQL(MySql.createShoppingTable);
-        db.execSQL(MySql.createBuyTable);
     }
 
     @Override

@@ -2,9 +2,7 @@ package net.anumbrella.lkshop.ui.viewholder;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
 import android.support.v7.widget.CardView;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -43,7 +41,7 @@ public class RecommendContentViewHolder extends BaseViewHolder<RecommendContentM
         this.data = data;
         simpleDraweeView.setImageURI(Uri.parse(data.getImageUrl()));
         title.setText(data.getTitle());
-        content.setText("￥ "+data.getPrice());
+        content.setText("￥ " + data.getPrice());
         cardView.setOnClickListener(this);
     }
 
@@ -54,7 +52,7 @@ public class RecommendContentViewHolder extends BaseViewHolder<RecommendContentM
         Intent intent = new Intent();
         switch (v.getId()) {
             case R.id.recommend_cardview:
-                intent.putExtra(DetailContentFragment.ARG_ITEM_INFO_RECOMMEND,data);
+                intent.putExtra(DetailContentFragment.ARG_ITEM_INFO_RECOMMEND, data);
                 break;
         }
 

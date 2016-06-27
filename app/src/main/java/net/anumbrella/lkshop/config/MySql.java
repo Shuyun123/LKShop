@@ -11,7 +11,6 @@ public class MySql {
     public static final String UserTable = "user";
     public static final String ShoppingTable = "shopping";
     public static final String CollectTable = "collect";
-    public static final String BuyTable = "buy";
     public static final int DATABASE_VERSION = 1;
 
     /**
@@ -57,13 +56,5 @@ public class MySql {
             "pid integer," +
             "uid integer)";
 
-    /**
-     * 创建购买表
-     */
-    public static final String createBuyTable = "create table if not exists " + BuyTable +
-            "(id integer primary key autoincrement," +
-            "pid integer," +
-            "uid integer," +
-            "sum integer)";
 
 }

@@ -1,6 +1,5 @@
 package net.anumbrella.lkshop.widget;
 
-import android.os.RecoverySystem;
 import android.util.Log;
 
 import net.anumbrella.lkshop.model.bean.ProgressBean;

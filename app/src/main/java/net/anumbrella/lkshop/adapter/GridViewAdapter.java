@@ -18,7 +18,6 @@ import java.util.ArrayList;
  */
 public class GridViewAdapter extends BaseAdapter {
 
-
     private ProductTypeModel productType;
 
     private ArrayList<ProductTypeModel> listProductType;

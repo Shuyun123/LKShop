@@ -1,6 +1,5 @@
 package net.anumbrella.lkshop.ui.fragment;
 
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -25,8 +24,6 @@ import net.anumbrella.lkshop.config.Config;
 import net.anumbrella.lkshop.model.bean.RepairDataModel;
 import net.anumbrella.lkshop.ui.activity.RepairContentActivity;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,7 +36,6 @@ import butterknife.OnClick;
  * Date：16/6/4 下午12:53
  */
 public class RepairContentFragment extends Fragment {
-
 
     public static final String ARG_ITEM_INFO_TYPE = "item_info_type";
 
@@ -151,7 +147,7 @@ public class RepairContentFragment extends Fragment {
                 startActivity(intent2);
                 break;
             case R.id.link_us_qq:
-                String url = "mqqwpa://im/chat?chat_type=wpa&uin="+qq.getText().toString();
+                String url = "mqqwpa://im/chat?chat_type=wpa&uin=" + qq.getText().toString();
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
                 break;
             case R.id.link_us_weixin:

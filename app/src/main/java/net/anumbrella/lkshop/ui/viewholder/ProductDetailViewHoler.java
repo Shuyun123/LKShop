@@ -67,7 +67,7 @@ public class ProductDetailViewHoler extends BaseViewHolder<CommentProductDataMod
             phone_select.setVisibility(View.GONE);
         }
         detail_product_title.setText(data.getProductName());
-        detail_product_price.setText("￥ "+data.getPrice());
+        detail_product_price.setText("￥ " + data.getPrice());
         product_detail_img.setImageURI(Uri.parse(data.getImg()));
     }
 
