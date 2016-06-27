@@ -1,4 +1,4 @@
-#洛口商城APP
+#洛克商城APP
 简单商城 开源版， 包括用户注册、登录、密码找回、短信验证、用户分享、消息推送、订单上传、商品分类、商品收藏、购物车订单的增添、删除、商品查询、用户设置、用户评价、用户评论等基本功能。
 
 
@@ -10,9 +10,7 @@
  <ul>
    <li style="list-style-type:none;margin-top:20px;">
       <image style="margin-left:10px" src = "./introduce/introduce1.png">
-      &nbsp;
       <image style="margin-left:10px" src = "./introduce/introduce2.png">
-      &nbsp;
       <image style="margin-left:10px" src = "./introduce/introduce3.png">
    </li>
    <br/>
@@ -20,9 +18,7 @@
    <br/>
    <li style="list-style-type:none;margin-top:35px;">
       <image style="margin-left:10px" src = "./introduce/introduce4.png">
-      &nbsp;
       <image style="margin-left:10px" src = "./introduce/introduce5.png">
-      &nbsp;
       <image style="margin-left:10px" src = "./introduce/introduce6.png">
    </li>
     <br/>
@@ -30,9 +26,7 @@
    <br/>
    <li style="list-style-type:none;margin-top:35px;">
       <image style="margin-left:10px" src = "./introduce/introduce7.png">
-      &nbsp;
       <image style="margin-left:10px" src = "./introduce/introduce8.png">
-      &nbsp;
       <image style="margin-left:10px" src = "./introduce/introduce9.png">
    </li>
  </ul>
