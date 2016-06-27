@@ -8,20 +8,20 @@
 #应用截图：
 <div>
  <ul>
-   <li>
-      <image src = "./introduce/introduce1.png">
-      <image src = "./introduce/introduce2.png">
-      <image src = "./introduce/introduce3.png">
+   <li style="list-style-type:none;margin-top:20px;">
+      <image style="margin-left:10px" src = "./introduce/introduce1.png">
+      <image style="margin-left:10px" src = "./introduce/introduce2.png">
+      <image style="margin-left:10px" src = "./introduce/introduce3.png">
    </li>
-   <li>
-      <image src = "./introduce/introduce4.png">
-      <image src = "./introduce/introduce5.png">
-      <image src = "./introduce/introduce6.png">
+   <li style="list-style-type:none;margin-top:35px;">
+      <image style="margin-left:10px" src = "./introduce/introduce4.png">
+      <image style="margin-left:10px" src = "./introduce/introduce5.png">
+      <image style="margin-left:10px" src = "./introduce/introduce6.png">
    </li>
-   <li>
-      <image src = "./introduce/introduce7.png">
-      <image src = "./introduce/introduce8.png">
-      <image src = "./introduce/introduce9.png">
+   <li style="list-style-type:none;margin-top:35px;">
+      <image style="margin-left:10px" src = "./introduce/introduce7.png">
+      <image style="margin-left:10px" src = "./introduce/introduce8.png">
+      <image style="margin-left:10px" src = "./introduce/introduce9.png">
    </li>
  </ul>
 </div>
