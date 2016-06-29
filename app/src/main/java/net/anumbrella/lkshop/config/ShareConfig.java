@@ -84,7 +84,7 @@ public class ShareConfig {
     public void initWeixin() {
         WeiXinShareContent weiXinShareContent = new WeiXinShareContent();
         weiXinShareContent.setShareContent("洛克商城app,为你提供良心品质的iphone");
-        weiXinShareContent.setTargetUrl("http://www.anumbrella.net/App/AppShopService/index.php");
+        weiXinShareContent.setTargetUrl("http://www.wandoujia.com/apps/net.anumbrella.lkshop");
         weiXinShareContent.setTitle("洛克良品");
         weiXinShareContent.setShareImage(new UMImage(context, R.mipmap.ic_launcher));
         mController.setShareMedia(weiXinShareContent);
@@ -93,7 +93,7 @@ public class ShareConfig {
     public void initWXCircle() {
         CircleShareContent circleShareContent = new CircleShareContent();
         circleShareContent.setShareContent("洛克商城app,为你提供良心品质的iphone");
-        circleShareContent.setTargetUrl("http://www.anumbrella.net/App/AppShopService/index.php");
+        circleShareContent.setTargetUrl("http://www.wandoujia.com/apps/net.anumbrella.lkshop");
         circleShareContent.setTitle("洛克良品");
         circleShareContent.setShareImage(new UMImage(context, R.mipmap.ic_launcher));
         mController.setShareMedia(circleShareContent);

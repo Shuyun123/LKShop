@@ -3,6 +3,10 @@
 
 ###[下载最新版本](http://www.anumbrella.net/App/AppShopService/index.php)
 
+###[豌豆荚](http://www.wandoujia.com/apps/net.anumbrella.lkshop)
+
+###[小米应用商店](http://app.mi.com/detail/421593)
+
 ##云端：
 原本打算采用后端服务平台bmob的，后来为了更方便自己自定义接口和今后的拓展，同时也是为了学习更透彻详细，所以后端采用了php。为了快速搭建完平台使用的是thinkphp框架。[后端代码](https://github.com/Shuyun123/AppShopService)。
 
@@ -32,6 +36,8 @@
    </li>
  </ul>
 </div>
+
+
 
 
 
