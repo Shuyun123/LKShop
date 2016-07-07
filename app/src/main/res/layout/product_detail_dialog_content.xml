@@ -182,16 +182,4 @@
         </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/dialog_ok"
-        android:layout_width="match_parent"
-        android:layout_height="50dip"
-        android:layout_marginTop="50dip"
-        android:background="@color/shop_bg"
-        android:gravity="center"
-        android:text="确定"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_size_18sp" />
-
-
 </LinearLayout>

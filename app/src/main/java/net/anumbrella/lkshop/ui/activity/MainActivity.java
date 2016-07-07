@@ -50,6 +50,7 @@ import net.anumbrella.lkshop.ui.fragment.RecommendFragment;
 import net.anumbrella.lkshop.ui.fragment.RepairFragment;
 import net.anumbrella.lkshop.utils.BaseUtils;
 import net.anumbrella.lkshop.utils.ExitUtils;
+import net.anumbrella.lkshop.utils.UpdateUtils;
 import net.anumbrella.lkshop.widget.MyViewPager;
 
 import java.util.ArrayList;
@@ -165,8 +166,7 @@ public class MainActivity extends AppCompatActivity {
         staticViewPager = viewPager;
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-
-
+        UpdateUtils.init(this).getAppInfo(0);
     }
 
     @Override

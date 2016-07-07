@@ -1,6 +1,7 @@
 package net.anumbrella.lkshop.app;
 
 import android.app.Application;
+import android.os.Environment;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.jude.utils.JFileManager;
@@ -8,6 +9,8 @@ import com.jude.utils.JUtils;
 
 import net.anumbrella.lkshop.model.bean.LocalUserDataModel;
 import net.anumbrella.lkshop.utils.BaseUtils;
+
+import java.io.File;
 
 import cn.smssdk.SMSSDK;
 
@@ -41,18 +44,22 @@ public class App extends Application {
         super.onCreate();
         Fresco.initialize(this);
         JUtils.initialize(this);
+
         //生成文件夹
         JFileManager.getInstance().init(this, Dir.values());
         if (BaseUtils.readLocalUser(App.this) == null) {
             initLocalUserData();
+        }
+        String path = Environment.getExternalStorageDirectory() + "/LKShop/";
+        File dirFile = new File(path);
+        if (!dirFile.exists()) {
+            dirFile.mkdir();
         }
 
         //mob短信验证初始化
         SMSSDK.initSDK(this, "14359dfc08d04", "720a87f2ddcd958ab3b4d7b987b41f38");
 
     }
-
-
 
 
     private void initLocalUserData() {

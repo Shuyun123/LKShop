@@ -134,7 +134,6 @@ public class DetailContentFragment extends Fragment {
         super.onCreate(savedInstanceState);
         mcontext = getContext();
         uid = BaseUtils.readLocalUser(mcontext).getUid();
-
     }
 
     @Override
@@ -388,7 +387,7 @@ public class DetailContentFragment extends Fragment {
         DialogPlus dialogPlus = DialogPlus.newDialog(mcontext)
                 .setContentHolder(holder)
                 .setGravity(Gravity.BOTTOM)
-                .setExpanded(true, 935)
+                .setFooter(R.layout.product_detail_dialog_footer)
                 .setCancelable(true)
                 .setOnClickListener(clickListener)
                 .create();

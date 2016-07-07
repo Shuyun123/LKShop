@@ -12,8 +12,8 @@ android {
         applicationId "net.anumbrella.lkshop"
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
         manifestPlaceholders = [
                 UMENG_APPKEY:props['UMENG_APPKEY'],
                 UMENG_MESSAGE_SECRET:props['UMENG_MESSAGE_SECRET'],

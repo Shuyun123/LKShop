@@ -21,6 +21,7 @@ import net.anumbrella.lkshop.config.Config;
 import net.anumbrella.lkshop.model.bean.RecommendContentModel;
 import net.anumbrella.lkshop.ui.activity.ContactUsActivity;
 import net.anumbrella.lkshop.ui.activity.MainActivity;
+import net.anumbrella.lkshop.utils.BaseUtils;
 
 /**
  * author：Anumbrella
@@ -47,6 +48,12 @@ public class RecommendListViewHolder extends BaseViewHolder<RecommendContentMode
         addImgViews(linearLayout_one, length / 2);
         addImgViews(linearLayout_two, length / 2);
 
+
+
+
+
+
+
     }
 
 
@@ -62,17 +69,16 @@ public class RecommendListViewHolder extends BaseViewHolder<RecommendContentMode
             GenericDraweeHierarchyBuilder builder =
                     new GenericDraweeHierarchyBuilder(getContext().getResources());
             GenericDraweeHierarchy hierarchy = builder
-                    // .setPlaceholderImage(getContext().getResources().getDrawable(R.mipmap.default_icon))
                     .setRoundingParams(RoundingParams.fromCornersRadius(10f))
                     .build();
-            LinearLayout.LayoutParams lps = new LinearLayout.LayoutParams(300, 200);
-            lps.setMargins(30, 0, 30, 0);
+            LinearLayout.LayoutParams lps = new LinearLayout.LayoutParams(BaseUtils.getScreenWidth(getContext())/length-30,220);
+            lps.setMargins(10, 0, 10, 0);
             view.setLayoutParams(lps);
             view.setHierarchy(hierarchy);
             TextView textView = new TextView(getContext());
             textView.setGravity(Gravity.CENTER);
-            LinearLayout.LayoutParams lps_text = new LinearLayout.LayoutParams(300, ViewGroup.LayoutParams.WRAP_CONTENT);
-            lps_text.setMargins(30, 15, 0, 0);
+            LinearLayout.LayoutParams lps_text = new LinearLayout.LayoutParams(BaseUtils.getScreenWidth(getContext())/length-30, ViewGroup.LayoutParams.WRAP_CONTENT);
+            lps_text.setMargins(10, 15, 0, 0);
             if (linearLayout == linearLayout_two) {
                 layout.setTag(i + length);
                 textView.setText(Config.recommdendListTexts[i + length]);

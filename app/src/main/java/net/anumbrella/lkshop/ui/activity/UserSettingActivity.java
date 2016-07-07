@@ -216,7 +216,6 @@ public class UserSettingActivity extends AppCompatActivity {
                 .setContentHolder(holder)
                 .setHeader(R.layout.user_setting_header)
                 .setGravity(Gravity.CENTER)
-                .setExpanded(true, 900)
                 .setCancelable(true)
                 .setOnClickListener(clickListener)
                 .create();
@@ -278,7 +277,6 @@ public class UserSettingActivity extends AppCompatActivity {
                 }
 
             } catch (Exception e) {
-                Log.d("anumbrella", e.toString());
                 e.printStackTrace();
             }
             uploadPricture();
