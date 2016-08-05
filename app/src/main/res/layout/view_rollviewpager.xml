@@ -16,7 +16,5 @@
         app:progressBarImage="@mipmap/ic_loading"
         app:progressBarImageScaleType="centerInside"
         fresco:failureImage="@drawable/icn_close"
-        fresco:failureImageScaleType="centerInside"
-
-        />
+        fresco:failureImageScaleType="centerInside" />
 </LinearLayout>

@@ -47,6 +47,7 @@ public class App extends Application {
 
         //生成文件夹
         JFileManager.getInstance().init(this, Dir.values());
+
         if (BaseUtils.readLocalUser(App.this) == null) {
             initLocalUserData();
         }

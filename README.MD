@@ -42,7 +42,7 @@
 
 
 #使用的主要技术:
-Material Design的设计、Rretrofit2、RxJAVA、友盟分享、消息推送、Mob的短信验证、自动更新(根据友盟提供的思路在自己的云端服务上实现的)、fresco、butterknife、图片上传、用户评价、用户评论等技术。
+Material Design的设计、Retrofit2、RxJAVA、友盟分享、消息推送、Mob的短信验证、自动更新(根据友盟提供的思路在自己的云端服务上实现的)、fresco、butterknife、图片上传、用户评价、用户评论等技术。
 
 
 #说明：
@@ -66,6 +66,7 @@ Material Design的设计、Rretrofit2、RxJAVA、友盟分享、消息推送、M
 
 ```bash
                Copyright 2015 Anumbrella
+               
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at 

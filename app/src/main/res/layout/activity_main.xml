@@ -19,10 +19,9 @@
             android:fitsSystemWindows="true"
             tools:openDrawer="start">
 
-
             <include layout="@layout/app_bar_main" />
 
-            <include layout="@layout/fragment_main_tab" />
+            <include layout="@layout/fragment_main_tab" />wrw
 
             <com.search.material.library.MaterialSearchView
                 android:id="@+id/search_view"
