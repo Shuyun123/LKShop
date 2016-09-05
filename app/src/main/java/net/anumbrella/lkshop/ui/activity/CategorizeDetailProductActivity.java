@@ -27,7 +27,7 @@ import butterknife.ButterKnife;
  * author：Anumbrella
  * Date：16/6/4 下午6:04
  */
-public class CategorizeDetailProductActivity extends AppCompatActivity {
+public class CategorizeDetailProductActivity extends BaseThemeSettingActivity {
 
     public static final String INTENT_PRODUCT_ITEM_INFO = "item_product_info";
 

@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.jude.utils.JUtils;
 import com.umeng.message.PushAgent;
 
 import net.anumbrella.customedittext.FloatLabelView;
@@ -41,7 +42,7 @@ import retrofit2.Response;
  * author：Anumbrella
  * Date：16/5/24 下午7:02
  */
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends BaseThemeSettingActivity {
 
     private ProgressDialog mDialog;
 
@@ -91,6 +92,8 @@ public class LoginActivity extends AppCompatActivity {
         // 设置ProgressDialog 是否可以按退回按键取消
         mDialog.setCancelable(false);
     }
+
+
 
 
     @OnClick({R.id.btn_register, R.id.btn_login, R.id.forget_password, R.id.btn_back})

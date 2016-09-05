@@ -9,6 +9,6 @@ public class Api {
     /**
      * 服务器后台地址
      */
-    public static final String baseUrl = "http://www.anumbrella.net";
+    public static final String baseUrl = "https://www.anumbrella.net";
 
 }

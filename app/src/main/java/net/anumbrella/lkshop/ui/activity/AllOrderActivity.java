@@ -38,7 +38,7 @@ import rx.Subscriber;
  * author：Anumbrella
  * Date：16/6/9 下午5:31
  */
-public class AllOrderActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
+public class AllOrderActivity extends BaseThemeSettingActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     public final static String ARG_ITEM_INFO_ORDER_LOOK_TYPE = "item_info_order_type";
 

@@ -3,6 +3,7 @@ package net.anumbrella.lkshop.ui.fragment;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
@@ -205,11 +206,21 @@ public class DetailContentFragment extends Fragment {
         upadateCollectState();
         upadteAddShoppingState();
         appbar.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+
             @Override
             public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
                 int maxScroll = appBarLayout.getTotalScrollRange();
                 float percentage = (float) Math.abs(verticalOffset) / (float) maxScroll;
-                toolbar.setBackgroundColor(Color.argb((int) (percentage * 255), 0, 168, 241));
+                TypedArray array = getActivity().getTheme().obtainStyledAttributes(new int[] {
+                        android.R.attr.colorPrimary,
+                });
+                int color = array.getColor(0, 0xFF00FF);
+                int red = (color & 0xff0000) >> 16;
+                int green = (color & 0x00ff00) >> 8;
+                int blue = (color & 0x0000ff);
+                toolbar.setBackgroundColor(Color.argb((int) (percentage * 255), red, green, blue));
+                array.recycle();
+
             }
         });
         return view;

@@ -20,7 +20,7 @@ import butterknife.OnClick;
  * author：Anumbrella
  * Date：16/6/27 下午8:13
  */
-public class ContactUsActivity extends AppCompatActivity {
+public class ContactUsActivity extends BaseThemeSettingActivity {
 
 
     @BindView(R.id.contact_us_toolbar)

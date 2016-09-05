@@ -17,7 +17,7 @@ import net.anumbrella.lkshop.ui.fragment.DetailContentFragment;
  * author：Anumbrella
  * Date：16/5/25 下午10:17
  */
-public class DetailContentActivity extends AppCompatActivity {
+public class DetailContentActivity extends BaseThemeSettingActivity {
 
 
     @Override

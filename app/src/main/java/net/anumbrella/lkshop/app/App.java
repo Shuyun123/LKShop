@@ -4,6 +4,7 @@ import android.app.Application;
 import android.os.Environment;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
+import com.jude.utils.JActivityManager;
 import com.jude.utils.JFileManager;
 import com.jude.utils.JUtils;
 
@@ -59,6 +60,8 @@ public class App extends Application {
 
         //mob短信验证初始化
         SMSSDK.initSDK(this, "14359dfc08d04", "720a87f2ddcd958ab3b4d7b987b41f38");
+
+        registerActivityLifecycleCallbacks(JActivityManager.getActivityLifecycleCallbacks());
 
     }
 

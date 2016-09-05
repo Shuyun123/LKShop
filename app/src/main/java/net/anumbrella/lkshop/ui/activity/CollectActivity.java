@@ -27,7 +27,7 @@ import butterknife.ButterKnife;
  * author：Anumbrella
  * Date：16/6/10 下午11:09
  */
-public class CollectActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
+public class CollectActivity extends BaseThemeSettingActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     private static CollectAdapter adapter;
 

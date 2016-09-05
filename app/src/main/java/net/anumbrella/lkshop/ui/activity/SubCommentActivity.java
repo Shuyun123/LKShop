@@ -51,7 +51,7 @@ import rx.Subscriber;
  * author：Anumbrella
  * Date：16/6/17 下午1:14
  */
-public class SubCommentActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
+public class SubCommentActivity extends BaseThemeSettingActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     public final static String ARG_ITEM_INFO_SUB_COMMENT_DATA = "item_info_sub_comment_data";
 

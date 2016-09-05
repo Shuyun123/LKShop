@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dip"
+    android:paddingLeft="16dip"
+    android:paddingRight="16dip"
+    android:paddingTop="8dip">
+
+    <LinearLayout
+        android:id="@+id/theme1"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_margin="10dip">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="@color/md_green_500"
+            app:cardCornerRadius="3dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/theme2"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_margin="10dip">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="@color/md_red_500"
+            app:cardCornerRadius="3dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/theme3"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_margin="10dip">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="@color/md_blue_grey_500"
+            app:cardCornerRadius="3dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/theme4"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_margin="10dip">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="@color/md_falcon_500"
+            app:cardCornerRadius="3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/theme5"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_margin="10dip">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="@color/md_blue_500"
+            app:cardCornerRadius="3dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

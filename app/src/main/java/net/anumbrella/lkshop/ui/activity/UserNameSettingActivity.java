@@ -32,7 +32,7 @@ import retrofit2.Response;
  * author：Anumbrella
  * Date：16/6/21 下午11:12
  */
-public class UserNameSettingActivity extends AppCompatActivity {
+public class UserNameSettingActivity extends BaseThemeSettingActivity {
 
 
     @BindView(R.id.edit_name_text)

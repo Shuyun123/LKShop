@@ -1,6 +1,7 @@
 package net.anumbrella.lkshop.ui.fragment;
 
 import android.annotation.TargetApi;
+import android.content.res.TypedArray;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;

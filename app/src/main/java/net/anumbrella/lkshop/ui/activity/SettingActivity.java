@@ -1,16 +1,23 @@
 package net.anumbrella.lkshop.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.jude.utils.JUtils;
+import com.orhanobut.dialogplus.DialogPlus;
+import com.orhanobut.dialogplus.Holder;
+import com.orhanobut.dialogplus.OnClickListener;
+import com.orhanobut.dialogplus.ViewHolder;
 import com.umeng.message.PushAgent;
 
 import net.anumbrella.lkshop.R;
@@ -24,7 +31,7 @@ import butterknife.OnClick;
  * author：Anumbrella
  * Date：16/6/24 下午6:12
  */
-public class SettingActivity extends AppCompatActivity {
+public class SettingActivity extends BaseThemeSettingActivity {
 
 
     @BindView(R.id.setting_toolbar)
@@ -55,6 +62,9 @@ public class SettingActivity extends AppCompatActivity {
         setToolbar(toolbar);
     }
 
+
+
+
     @OnClick({R.id.setting_update, R.id.setting_theme, R.id.setting_switch})
     public void click(View view) {
         switch (view.getId()) {
@@ -64,7 +74,7 @@ public class SettingActivity extends AppCompatActivity {
                 UpdateUtils.init(this).getAppInfo(hand);
                 break;
             case R.id.setting_theme:
-                Toast.makeText(SettingActivity.this,"下一版本退出",Toast.LENGTH_SHORT).show();
+                createSelectThemeDialog();
                 break;
             case R.id.setting_switch:
                 PushAgent mPushAgent = PushAgent.getInstance(this);
@@ -103,6 +113,56 @@ public class SettingActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
 
     }
+
+
+    private void createSelectThemeDialog() {
+        View layoutView = LayoutInflater.from(this).inflate(R.layout.theme_color_select, null);
+        Holder holder = new ViewHolder(layoutView);
+        OnClickListener clickListener = new OnClickListener() {
+            @Override
+            public void onClick(DialogPlus dialog, View view) {
+                switch (view.getId()) {
+                    case R.id.theme1:
+                        JUtils.getSharedPreference().edit().putInt("THEME", 1).commit();
+                        break;
+                    case R.id.theme2:
+                        JUtils.getSharedPreference().edit().putInt("THEME", 2).commit();
+                        break;
+                    case R.id.theme3:
+                        JUtils.getSharedPreference().edit().putInt("THEME", 3).commit();
+                        break;
+                    case R.id.theme4:
+                        JUtils.getSharedPreference().edit().putInt("THEME", 4).commit();
+                        break;
+                    case R.id.theme5:
+                        JUtils.getSharedPreference().edit().putInt("THEME", 5).commit();
+                        break;
+
+                }
+                dialog.dismiss();
+                restartApp();
+
+            }
+        };
+
+        DialogPlus dialogPlus = DialogPlus.newDialog(this)
+                .setContentHolder(holder)
+                .setGravity(Gravity.CENTER)
+                .setCancelable(true)
+                .setOnClickListener(clickListener)
+                .create();
+        dialogPlus.show();
+    }
+
+
+    private void restartApp() {
+        JUtils.Toast("设置成功,重启生效");
+        final Intent intent = getPackageManager().getLaunchIntentForPackage(getPackageName());
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
+
+
 
 
     @Override

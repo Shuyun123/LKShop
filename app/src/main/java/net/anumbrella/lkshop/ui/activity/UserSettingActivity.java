@@ -56,7 +56,7 @@ import retrofit2.Response;
  * author：Anumbrella
  * Date：16/6/9 下午4:25
  */
-public class UserSettingActivity extends AppCompatActivity {
+public class UserSettingActivity extends BaseThemeSettingActivity {
 
     private static final int PHOTO_REQUEST_CAMERA = 1;// 拍照
 

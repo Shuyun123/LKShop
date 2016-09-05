@@ -36,7 +36,7 @@ import retrofit2.Response;
  * author：Anumbrella
  * Date：16/6/9 上午10:59
  */
-public class ProductPayDetailActivity extends AppCompatActivity {
+public class ProductPayDetailActivity extends BaseThemeSettingActivity {
 
     private ArrayList<ListProductContentModel> data;
 

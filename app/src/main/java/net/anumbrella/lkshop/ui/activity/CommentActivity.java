@@ -38,7 +38,7 @@ import retrofit2.Response;
  * author：Anumbrella
  * Date：16/6/13 下午7:25
  */
-public class CommentActivity extends AppCompatActivity {
+public class CommentActivity extends BaseThemeSettingActivity {
 
     public final static String ARG_ITEM_INFO_COMMENT_ORDER = "item_info_comment_order";
 

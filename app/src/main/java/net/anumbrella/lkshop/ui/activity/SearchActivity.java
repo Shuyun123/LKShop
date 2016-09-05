@@ -25,7 +25,7 @@ import butterknife.ButterKnife;
  * author：Anumbrella
  * Date：16/5/25 下午8:08
  */
-public class SearchActivity extends AppCompatActivity {
+public class SearchActivity extends BaseThemeSettingActivity {
 
     private CategorizeDetailProductAdapter adapter;
 

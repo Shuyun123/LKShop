@@ -2,6 +2,7 @@ package net.anumbrella.lkshop.ui.fragment;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -117,7 +118,11 @@ public class RepairContentFragment extends Fragment {
         setHasOptionsMenu(true);
         toolbar.setTitle(type);
         ((RepairContentActivity) getActivity()).setToolbar(toolbar);
-        toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        TypedArray array = getActivity().getTheme().obtainStyledAttributes(new int[] {
+                android.R.attr.colorPrimary,
+        });
+        int color = array.getColor(0, 0xFF00FF);
+        toolbar.setBackgroundColor(color);
         return view;
     }
 

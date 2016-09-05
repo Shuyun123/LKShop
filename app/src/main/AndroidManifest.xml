@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.anumbrella.lkshop"
-    android:versionCode="1"
-    android:versionName="1.0">
+    android:versionCode="3"
+    android:versionName="1.2">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -27,20 +27,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".ui.activity.WelcomeActivity" />
-        <activity
-            android:name=".ui.activity.LoginActivity"
-            android:theme="@style/AppTheme.Notitle" />
+        <activity android:name=".ui.activity.LoginActivity" />
+
+        <activity android:name=".ui.activity.BaseThemeSettingActivity" />
         <activity
             android:name=".ui.activity.MainActivity"
-            android:launchMode="singleTask"
+            android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".ui.activity.RegisterActivity"
-            android:theme="@style/AppTheme.Notitle" />
+        <activity android:name=".ui.activity.RegisterActivity" />
 
-        <activity
-            android:name=".ui.activity.FindPasswordActivity"
-            android:theme="@style/AppTheme.Notitle" />
+        <activity android:name=".ui.activity.FindPasswordActivity" />
         <activity android:name=".ui.activity.DetailContentActivity" />
         <activity android:name=".ui.activity.ServiceTextActivity" />
         <activity
@@ -52,55 +48,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.activity.RepairContentActivity"
-            android:theme="@style/AppTheme.Notitle" />
+        <activity android:name=".ui.activity.RepairContentActivity" />
 
-        <activity
-            android:name=".ui.activity.CategorizeDetailProductActivity"
-            android:theme="@style/AppTheme.Notitle" />
-        <activity
-            android:name=".ui.activity.ProductPayDetailActivity"
-            android:theme="@style/AppTheme.Notitle" />
-        <activity
-            android:name=".ui.activity.UserSettingActivity"
-            android:theme="@style/AppTheme.Notitle" />
+        <activity android:name=".ui.activity.CategorizeDetailProductActivity" />
+        <activity android:name=".ui.activity.ProductPayDetailActivity" />
+        <activity android:name=".ui.activity.UserSettingActivity" />
 
-        <activity
-            android:name=".ui.activity.AllOrderActivity"
-            android:theme="@style/AppTheme.Notitle" />
-        <activity
-            android:name=".ui.activity.CollectActivity"
-            android:theme="@style/AppTheme.Notitle" />
+        <activity android:name=".ui.activity.AllOrderActivity" />
+        <activity android:name=".ui.activity.CollectActivity" />
 
-        <activity
-            android:name=".ui.activity.CommentActivity"
-            android:theme="@style/AppTheme.Notitle" />
-        <activity
-            android:name=".ui.activity.SubCommentActivity"
-            android:theme="@style/AppTheme.Notitle" />
-        <activity
-            android:name=".ui.activity.SearchActivity"
-            android:theme="@style/AppTheme.Notitle" />
+        <activity android:name=".ui.activity.CommentActivity" />
+        <activity android:name=".ui.activity.SubCommentActivity" />
+        <activity android:name=".ui.activity.SearchActivity" />
 
-        <activity
-            android:name=".ui.activity.UserNameSettingActivity"
-            android:theme="@style/AppTheme.Notitle" />
+        <activity android:name=".ui.activity.UserNameSettingActivity" />
 
-        <activity
-            android:name=".ui.activity.SettingActivity"
-            android:theme="@style/AppTheme.Notitle" />
+        <activity android:name=".ui.activity.SettingActivity" />
 
-        <activity
-            android:name=".ui.activity.AboutActivity"
-            android:theme="@style/AppTheme.Notitle" />
+        <activity android:name=".ui.activity.AboutActivity" />
 
-        <activity
-            android:name=".ui.activity.BaseWebActivity"
-            android:theme="@style/AppTheme.Notitle" />
-        <activity
-            android:name=".ui.activity.ContactUsActivity"
-            android:theme="@style/AppTheme.Notitle" />
+        <activity android:name=".ui.activity.BaseWebActivity" />
+        <activity android:name=".ui.activity.ContactUsActivity" />
 
         <!--MOB短信验证activity-->
         <activity

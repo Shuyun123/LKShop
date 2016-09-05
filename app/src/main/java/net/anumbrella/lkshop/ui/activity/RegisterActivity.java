@@ -35,7 +35,7 @@ import retrofit2.Response;
  * author：Anumbrella
  * Date：16/5/28 下午8:56
  */
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends BaseThemeSettingActivity {
 
     private String phone;
 

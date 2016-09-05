@@ -18,7 +18,7 @@ import net.anumbrella.lkshop.ui.fragment.RepairScreenTypeFragment;
  * author：Anumbrella
  * Date：16/6/4 下午12:49
  */
-public class RepairContentActivity extends AppCompatActivity {
+public class RepairContentActivity extends BaseThemeSettingActivity {
 
     private String type = null;
 

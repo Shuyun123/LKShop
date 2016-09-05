@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFD1CACA"
+    android:fitsSystemWindows="true"
     android:orientation="vertical">
 
     <android.support.design.widget.AppBarLayout
@@ -35,8 +36,7 @@
             android:layout_height="match_parent"
             app:layout_progress="@layout/page_progress" />
 
-
     </LinearLayout>
 
 
-</LinearLayout>
+</com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout>

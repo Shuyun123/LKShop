@@ -22,7 +22,7 @@ import butterknife.OnClick;
  * author：Anumbrella
  * Date：16/6/25 下午10:44
  */
-public class AboutActivity extends AppCompatActivity {
+public class AboutActivity extends BaseThemeSettingActivity {
 
 
     @BindView(R.id.about_toolbar)
@@ -100,7 +100,7 @@ public class AboutActivity extends AppCompatActivity {
                 builder.show();
                 break;
             case R.id.about_me:
-                extras.putString(BaseWebActivity.BUNDLE_KEY_URL, "http://www.anumbrella.net");
+                extras.putString(BaseWebActivity.BUNDLE_KEY_URL, "https://www.anumbrella.net");
                 extras.putString(BaseWebActivity.BUNDLE_KEY_TITLE, "关于我");
                 Intent intent = new Intent(this, BaseWebActivity.class);
                 intent.putExtras(extras);

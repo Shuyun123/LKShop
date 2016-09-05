@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/milk_white"
+    android:fitsSystemWindows="true"
     android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dip"
-        android:background="@color/colorPrimary">
+        android:background="?colorPrimary">
 
         <Button
             android:id="@+id/btn_back"
@@ -110,4 +111,4 @@
             android:text="忘了密码?点此找回"
             android:textColor="#0fc4d9" />
     </LinearLayout>
-</LinearLayout>
+</com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout>

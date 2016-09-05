@@ -1,5 +1,6 @@
 package net.anumbrella.lkshop.ui.activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.net.Uri;
@@ -17,6 +18,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -33,6 +35,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.drawee.view.SimpleDraweeView;
+import com.jude.utils.JActivityManager;
 import com.jude.utils.JUtils;
 import com.search.material.library.MaterialSearchView;
 import com.umeng.message.PushAgent;
@@ -63,7 +66,7 @@ import butterknife.OnClick;
  * author：Anumbrella
  * Date：16/5/23 下午6:12
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseThemeSettingActivity {
 
     protected FragmentTabHost tabHost;
 
@@ -151,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        setSupportActionBar(toolbar);
+
         tabHost = (FragmentTabHost) super.findViewById(android.R.id.tabhost);
         tabHost.setup(this, getSupportFragmentManager()
                 , R.id.contentLayout);
@@ -159,6 +162,7 @@ public class MainActivity extends AppCompatActivity {
         initTab();
         initPush();
         initSearchView();
+        setSupportActionBar(toolbar);
         setDrawerLayout(toolbar);
         initAppBarSetting();
         initMyTab();
@@ -167,7 +171,9 @@ public class MainActivity extends AppCompatActivity {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         UpdateUtils.init(this).getAppInfo(0);
+
     }
+
 
     @Override
     protected void onResume() {
@@ -343,7 +349,6 @@ public class MainActivity extends AppCompatActivity {
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             @Override
             public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
-
                 if (verticalOffset == 0 && !fab.isShown()) {
                     if (selectTab) {
                         fab.hide();
@@ -602,7 +607,9 @@ public class MainActivity extends AppCompatActivity {
      */
     private void pressAgainExit() {
         if (exit.isExit()) {
-            finish();
+            for (Activity activity : JActivityManager.getActivityStack()) {
+                activity.finish();
+            }
         } else {
             Toast.makeText(this, "再按一次退出", Toast.LENGTH_SHORT).show();
             exit.doExitAction();

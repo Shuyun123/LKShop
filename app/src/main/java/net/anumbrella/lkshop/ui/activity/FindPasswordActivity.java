@@ -37,7 +37,7 @@ import retrofit2.Response;
  * author：Anumbrella
  * Date：16/5/29 上午9:03
  */
-public class FindPasswordActivity extends AppCompatActivity {
+public class FindPasswordActivity extends BaseThemeSettingActivity {
 
 
     /**

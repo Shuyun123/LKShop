@@ -111,7 +111,7 @@ public class UpdateUtils {
         dialog.setTitle("下载");
         dialog.setMessage("正在下载，请稍后...");
         dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-        dialog.setCancelable(false);
+        dialog.setCancelable(true);
         dialog.show();
 
 
@@ -164,8 +164,6 @@ public class UpdateUtils {
                 JUtils.Toast("网络不给力");
             }
         }, appPath);
-
-
     }
 
     public  void installApk(String filePath) {
