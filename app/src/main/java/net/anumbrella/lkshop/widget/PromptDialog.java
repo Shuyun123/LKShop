@@ -57,7 +57,6 @@ public class PromptDialog extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         Window window = this.getWindow();
         WindowManager.LayoutParams params = window.getAttributes();
         int marginBorder = BaseUtils.dp2px(context, 30);

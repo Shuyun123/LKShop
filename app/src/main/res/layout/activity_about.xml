@@ -128,7 +128,7 @@
                 android:layout_marginLeft="10dip"
                 android:layout_marginTop="5dip"
                 android:gravity="center"
-                android:text="http://www.anumbrella.net"
+                android:text="https://www.anumbrella.net"
                 android:textColor="@color/textColor_gray"
                 android:textSize="@dimen/text_size_14sp" />
         </LinearLayout>

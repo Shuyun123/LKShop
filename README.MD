@@ -1,7 +1,6 @@
 #洛克商城APP
 简单商城 开源版， 包括用户注册、登录、密码找回、短信验证、用户分享、消息推送、订单上传、商品分类、商品收藏、购物车订单的增添、删除、商品查询、用户设置、用户评价、用户评论等基本功能。
 
-###[下载最新版本](http://www.anumbrella.net/App/AppShopService/index.php)
 
 ###[豌豆荚](http://www.wandoujia.com/apps/net.anumbrella.lkshop)
 
