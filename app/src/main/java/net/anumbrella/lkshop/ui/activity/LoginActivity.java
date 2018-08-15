@@ -5,14 +5,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.jude.utils.JUtils;
 import com.umeng.message.PushAgent;
 
 import net.anumbrella.customedittext.FloatLabelView;
@@ -176,7 +174,6 @@ public class LoginActivity extends BaseThemeSettingActivity {
                                         Toast.makeText(LoginActivity.this, ServiceApi.LoginApi[i][1], Toast.LENGTH_SHORT).show();
                                         break;
                                     }
-
                                 }
 
                                 if (!result.equals(ServiceApi.LoginApi[0][0]) && !result.equals(ServiceApi.LoginApi[0][1])) {

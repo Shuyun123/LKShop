@@ -8,7 +8,9 @@ public class Api {
 
     /**
      * 服务器后台地址
+     *
+     *  模拟器跑app，地址为10.0.2.2，真机跑app，局域网下更改为后台服务器IP地址
      */
-    public static final String baseUrl = "https://www.anumbrella.net";
+    public static final String baseUrl = "http://10.0.2.2";
 
 }

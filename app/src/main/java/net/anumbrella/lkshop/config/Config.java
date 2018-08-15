@@ -1,6 +1,7 @@
 package net.anumbrella.lkshop.config;
 
 import net.anumbrella.lkshop.R;
+import net.anumbrella.lkshop.api.Api;
 import net.anumbrella.lkshop.ui.fragment.CategorizeFragment;
 import net.anumbrella.lkshop.ui.fragment.IndexFragment;
 import net.anumbrella.lkshop.ui.fragment.ShoppingFragment;
@@ -22,10 +23,10 @@ public final class Config {
      * 引导界面服务器地址上的图片
      */
     public static final String[] pricUrls = {
-            "http://www.anumbrella.net/App/AppShopService/Guide/guide1.jpg",
-            "http://www.anumbrella.net/App/AppShopService/Guide/guide2.jpg",
-            "http://www.anumbrella.net/App/AppShopService/Guide/guide3.jpg",
-            "http://www.anumbrella.net/App/AppShopService/Guide/guide4.jpg"
+            Api.baseUrl + "/AppShopService/Guide/guide1.jpg",
+            Api.baseUrl + "/AppShopService/Guide/guide2.jpg",
+            Api.baseUrl + "/AppShopService/Guide/guide3.jpg",
+            Api.baseUrl + "/AppShopService/Guide/guide4.jpg"
     };
 
 
@@ -51,7 +52,6 @@ public final class Config {
     public static final Class[] tabClass = {
             IndexFragment.class, CategorizeFragment.class, ShoppingFragment.class, UserFragment.class
     };
-
 
 
     /**
@@ -186,12 +186,6 @@ public final class Config {
     public static final String[] numberText = {
             "①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩", "⑪", "⑫", "⑬", "⑭", "⑮", "⑯"
     };
-
-
-
-
-
-
 
 
 }

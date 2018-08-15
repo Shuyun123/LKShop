@@ -184,7 +184,6 @@ public class CommentActivity extends BaseThemeSettingActivity {
                 }
 
             }
-
             @Override
             public void onFailure(Throwable t) {
 

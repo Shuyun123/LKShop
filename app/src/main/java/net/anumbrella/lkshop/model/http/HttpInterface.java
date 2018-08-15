@@ -38,7 +38,7 @@ public interface HttpInterface {
      * @param userObject
      * @return
      */
-    @POST("/App/AppShopService/index.php/Home/Index/{action}")
+    @POST("/AppShopService/index.php/Home/Index/{action}")
     Call<ResponseBody> registerUser(@Path("action") String action, @Body UserDataModel userObject);
 
     /**
@@ -48,7 +48,7 @@ public interface HttpInterface {
      * @param phoneNumber
      * @return
      */
-    @GET("/App/AppShopService/index.php/Home/Index/{action}")
+    @GET("/AppShopService/index.php/Home/Index/{action}")
     Call<ResponseBody> login(@Path("action") String action, @Query("phone") String phoneNumber, @Query("password") String password);
 
 
@@ -58,7 +58,7 @@ public interface HttpInterface {
      * @param action
      * @return
      */
-    @GET("/App/AppShopService/index.php/Home/Index/{action}")
+    @GET("/AppShopService/index.php/Home/Index/{action}")
     Observable<List<ProductDataModel>> getProducts(@Path("action") String action);
 
 
@@ -68,7 +68,7 @@ public interface HttpInterface {
      * @param action
      * @return
      */
-    @GET("/App/AppShopService/index.php/Home/Index/{action}")
+    @GET("/AppShopService/index.php/Home/Index/{action}")
     Observable<List<BannerDataModel>> getBanners(@Path("action") String action);
 
     /**
@@ -78,7 +78,7 @@ public interface HttpInterface {
      * @param data
      * @return
      */
-    @POST("/App/AppShopService/index.php/Home/Index/{action}")
+    @POST("/AppShopService/index.php/Home/Index/{action}")
     Call<ResponseBody> uploadOrder(@Path("action") String action, @Body ListProductContentModel data);
 
 
@@ -88,7 +88,7 @@ public interface HttpInterface {
      * @param action
      * @return
      */
-    @GET("/App/AppShopService/index.php/Home/Index/{action}")
+    @GET("/AppShopService/index.php/Home/Index/{action}")
     Observable<List<OrderDataModel>> getAllOrderData(@Path("action") String action, @Query("uid") String uid);
 
 
@@ -98,7 +98,7 @@ public interface HttpInterface {
      * @param action
      * @return
      */
-    @GET("/App/AppShopService/index.php/Home/Index/{action}")
+    @GET("/AppShopService/index.php/Home/Index/{action}")
     Call<ResponseBody> deleteOrderData(@Path("action") String action, @Query("uid") String uid, @Query("pid") String pid, @Query("oid") String orderId);
 
 
@@ -109,7 +109,7 @@ public interface HttpInterface {
      * @param commentData
      * @return
      */
-    @POST("/App/AppShopService/index.php/Home/Index/{action}")
+    @POST("/AppShopService/index.php/Home/Index/{action}")
     Call<ResponseBody> publishComment(@Path("action") String action, @Body CommentOrderDataModel commentData);
 
 
@@ -119,7 +119,7 @@ public interface HttpInterface {
      * @param action
      * @return
      */
-    @GET("/App/AppShopService/index.php/Home/Index/{action}")
+    @GET("/AppShopService/index.php/Home/Index/{action}")
     Observable<List<CommentProductDataModel>> getCommentData(@Path("action") String action);
 
 
@@ -131,7 +131,7 @@ public interface HttpInterface {
      * @param likes
      * @return
      */
-    @GET("/App/AppShopService/index.php/Home/Index/{action}")
+    @GET("/AppShopService/index.php/Home/Index/{action}")
     Call<ResponseBody> updateLikes(@Path("action") String action, @Query("cid") String cid, @Query("likeNumber") String likes);
 
 
@@ -142,7 +142,7 @@ public interface HttpInterface {
      * @param data
      * @return
      */
-    @POST("/App/AppShopService/index.php/Home/Index/{action}")
+    @POST("/AppShopService/index.php/Home/Index/{action}")
     Call<ResponseBody> uploadSubComment(@Path("action") String action, @Body SubCommentDataModel data);
 
 
@@ -152,7 +152,7 @@ public interface HttpInterface {
      * @param action
      * @return
      */
-    @GET("/App/AppShopService/index.php/Home/Index/{action}")
+    @GET("/AppShopService/index.php/Home/Index/{action}")
     Observable<List<SubCommentDataModel>> getSubCommentData(@Path("action") String action, @Query("cid") String cid);
 
     /**
@@ -163,7 +163,7 @@ public interface HttpInterface {
      * @param likes
      * @return
      */
-    @GET("/App/AppShopService/index.php/Home/Index/{action}")
+    @GET("/AppShopService/index.php/Home/Index/{action}")
     Call<ResponseBody> updateSubLikes(@Path("action") String action, @Query("sid") String sid, @Query("likeNumber") String likes);
 
 
@@ -175,7 +175,7 @@ public interface HttpInterface {
      * @return
      */
     @Multipart
-    @POST("/App/AppShopService/index.php/Home/Index/{action}")
+    @POST("/AppShopService/index.php/Home/Index/{action}")
     Call<ResponseBody> uploadPicture(@Path("action") String action, @PartMap Map<String, RequestBody> params);
 
 
@@ -186,7 +186,7 @@ public interface HttpInterface {
      * @param value
      * @return
      */
-    @GET("/App/AppShopService/index.php/Home/Index/{action}")
+    @GET("/AppShopService/index.php/Home/Index/{action}")
     Call<ResponseBody> updateUserSettingName(@Path("action") String action, @Query("value") String value, @Query("type") String type, @Query("uid") String uid);
 
 
@@ -197,7 +197,7 @@ public interface HttpInterface {
      * @param phone
      * @return
      */
-    @GET("/App/AppShopService/index.php/Home/Index/{action}")
+    @GET("/AppShopService/index.php/Home/Index/{action}")
     Call<ResponseBody> findPassCheckPhoneExsit(@Path("action") String action, @Query("phone") String phone);
 
 
@@ -209,7 +209,7 @@ public interface HttpInterface {
      * @param password
      * @return
      */
-    @GET("/App/AppShopService/index.php/Home/Index/{action}")
+    @GET("/AppShopService/index.php/Home/Index/{action}")
     Call<ResponseBody> findPassUpdatePass(@Path("action") String action, @Query("phone") String phone, @Query("password") String password);
 
 
@@ -219,7 +219,7 @@ public interface HttpInterface {
      * @param action
      * @return
      */
-    @GET("/App/AppShopService/index.php/Home/Index/{action}")
+    @GET("/AppShopService/index.php/Home/Index/{action}")
     Call<ResponseBody> getUpdateAppInfo(@Path("action") String action);
 
 
@@ -229,7 +229,7 @@ public interface HttpInterface {
      * @param action
      * @return
      */
-    @GET("/App/AppShopService/Uploads/App/{action}")
+    @GET("/AppShopService/Uploads/App/{action}")
     Call<ResponseBody> updateApp(@Path("action") String action);
 
 
