@@ -4,7 +4,7 @@
 
 
 ## 云端：
-原本打算采用后端服务平台bmob的，后来为了更方便自己自定义接口和今后的拓展，同时也是为了自定义设计，所以后端采用了php。为了快速搭建完平台使用的是thinkphp框架。[后端代码](https://github.com/Shuyun123/AppShopService)。
+后端采用了php。为了快速搭建完平台使用的是ThinkPHP框架。[后端代码](https://github.com/Shuyun123/AppShopService)。
 
 # 应用截图：
 <div>
